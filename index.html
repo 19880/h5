@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title></title>
+    <meta name="apple-mobile-web-app-title" content="vqianduan.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="static/css/style.css"/>
+</head>
+<body class="p_start">
+    <div class="apage" style="background: url('static/img/bg-320.jpg') repeat"></div>
+    <div class="TopBgTitle">
+        <div class="wj_title ">大学生消费观调查问卷</div>
+    </div>
+
+    <div id="start" class="content">
+        <div class="wj_desc">
+            <p>您好，我们是XXX，我们正在进行一项关于大学生消费观的调查，想邀请您用几分钟时间帮忙填答这份问卷。</p>
+        </div>
+        <div class="b1">
+            <a href="#next=1" class="button white b_kscs">&nbsp;&nbsp;&nbsp;开     始     测     试&nbsp;&nbsp;&nbsp;</a>
+        </div>
+    </div>
+
+    <div id="ans" class="content">
+        <div id="ans_inner" class="wj_desc">
+            <script id="anshtml" type="text/html">
+                <p>{{topic}}</p>
+                <ul class="unstyled">
+                    {{each opts as value i}}
+                    <li><i></i><span href="#{{if value.next}}next={{value.next}}{{else}}result={{value.result}}{{/if}}">{{value.text}}</span></li>
+                    {{/each}}
+                </ul>
+            </script>
+        </div>
+    </div>
+
+    <div id="result" class="content">
+        <div id="result_inner" class="wj_desc">
+            <script id="reshtml" type="text/html">
+                <p class="t1">{{topic}}</p>
+                <p class="p1">{{desc}}</p>
+            </script>
+        </div>
+        <div class="b2">
+            <span><a href="#" class="button white b_cxcs">重新测试</a></span>
+        </div>
+        <div class="b2">
+            <span><a id="shareBtn" href="javascript:void();" class="button white b_fxpyq">分享朋友圈</a></span>
+        </div>
+        <div class="b1">
+            <a href="" class="button white b_xyt">下     一     题</a>
+        </div>
+    </div>
+
+    <div class="footBanner">
+        <a href="http://mp.weixin.qq.com/s?__biz=MzAwMjAwMjQ4OA==&amp;mid=200757755&amp;idx=1&amp;sn=fe2dabd3e77b2cd724a0f85c5bc742e2#rd">
+            <img src="static/img/jwws_icon.png" height="38" class="footBannerIcon">
+            <span class="attenBtn">关注</span>
+            关注一个最逗比的小伙伴
+        </a>
+        8265117
+    </div>
+
+    <div id="share">
+        <i class="view"></i>
+    </div>
+
+    <script src="static/js/zepto.min.js"></script>
+    <script src="static/js/template.js"></script>
+    <script src="static/js/cs.js"></script>
+</body>
+</html>

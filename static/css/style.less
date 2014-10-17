@@ -1,0 +1,250 @@
+@import 'common.less';
+
+@pb: 10px;
+
+body {
+  background: #FFFCF5;
+  color: #787a76;
+  min-width: 320px;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Banner */
+.footBanner {
+  height: 38px;
+  line-height: 38px;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 88;
+  text-align: left;
+
+  a {
+    width: 100%;
+    height: 38px;
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 16px;
+  }
+
+  .footBannerIcon {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .attenBtn {
+    background: #00c051;
+    width: 56px;
+    height: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    float: right;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+}
+
+/* 控制显示 */
+.content {position:relative;display: none;}
+.p_start #start{display: block}
+.p_ans #ans{display: block}
+.p_result #result{display: block}
+
+/* 第一页 */
+.p_start {
+  .TopBgTitle {
+    margin-top: 100px;
+  }
+}
+
+/* 全屏 */
+.apage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* 大标题 */
+.TopBgTitle {
+  position:relative;
+  padding: @pb;
+  margin-top: 50px;
+}
+.wj_title {
+  color: #FFF;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px #E85C41;
+}
+
+/* 描述 */
+.wj_desc {
+  padding: @pb;
+  margin: 10px;
+  background: rgba(255, 252, 245, .85);
+  color: #191919;
+  .border-radius(10px);
+
+  p {
+    line-height: 1.4em;
+    text-shadow: 1px 1px rgba(255, 255, 255, .7);
+  }
+}
+
+/* 按钮 */
+.b1,.b2{
+  a{
+    display: inline-block;
+    color: #FFF;
+    .border-radius(4px);
+    font-weight: bold;
+    text-align: center;
+    padding: .7em 0px .75em;
+    .box-shadow();
+    height: 20px;
+    line-height: 20px;
+    text-indent: -9999px;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+.b1 {
+  padding: @pb;
+  a {
+    width: 100%;
+    //background: #F3AC9A;
+    background-color: #E85C41;
+  }
+}
+.b2 {
+  float: left;
+  width: 50%;
+
+  span{
+    display: block;
+    padding: @pb;
+  }
+  a{
+    width: 100%;
+    background-color: #00c051;
+  }
+}
+.b_kscs{
+  background:url(../img/t_kscs.png) center no-repeat;
+}
+.b_cxcs{
+  background:url(../img/t_cxcs.png) center no-repeat;
+}
+.b_fxpyq{
+  background:url(../img/t_fxpyq.png) center no-repeat;
+}
+.b_xyt{
+  background:url(../img/t_xyt.png) center no-repeat;
+}
+
+/* 标题 */
+.t1 {
+  padding: 2px 0 6px;
+  color:#E85C41;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid rgba(232,92,65,.3);
+}
+/* 文字 */
+.p1 {
+  padding: 8px 0;
+}
+
+/* 选项列表 */
+.unstyled {
+  margin: 5px 0 5px 0;
+  padding: 0;
+  border: 1px solid #d5d5d5;
+  .border-radius(3px);
+
+  li {
+    position: relative;
+    border-color: #fff;
+    background: #fff;
+    font-size: 16px;
+    min-height: 43px;
+    border-bottom: 1px solid #ebebeb;
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+      border-bottom: 0px solid #fff !important;
+    }
+    span {
+      cursor: pointer;
+      display: block;
+      padding: 11px 30px 9px 0;
+      color: #262626;
+      text-align: center;
+    }
+
+    i{
+      display: block;
+      float: left;
+      background: url(../img/radio.png) no-repeat center top;
+      vertical-align: middle;
+      height:21px;
+      width:21px;
+      background-size:cover;
+      margin: 10px 4px 10px 10px;
+    }
+
+    &.checked {
+      background: #FFF1ED;
+      a{
+        color:#E85C41;
+        font-weight: bold;
+      }
+
+      i{
+        background-position: center bottom;
+      }
+    }
+  }
+}
+
+/* 分享 */
+#share{
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 266;
+  background: url(../img/share.png) 100% 0% / 100% no-repeat rgba(0, 0, 0, .85);
+
+
+  .view {
+    position: absolute;
+    width: 120px;
+    height: 46px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -60px;
+    background:url(../img/view.png) no-repeat;
+  }
+}
