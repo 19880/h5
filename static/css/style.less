@@ -55,7 +55,7 @@ body {
 }
 
 /* 控制显示 */
-.content {position:relative;display: none;}
+.content {position:relative;display: none;padding-bottom:48px}
 .p_start #start{display: block}
 .p_ans #ans{display: block}
 .p_result #result{display: block}
@@ -84,11 +84,10 @@ body {
   margin-top: 50px;
 }
 .wj_title {
-  color: #FFF;
+  color: #E85C41;
   font-size: 22px;
-  font-weight: bold;
   text-align: center;
-  text-shadow: 1px 1px #E85C41;
+  text-shadow: 1px 1px #FFF;
 }
 
 /* 描述 */
@@ -111,13 +110,12 @@ body {
     display: inline-block;
     color: #FFF;
     .border-radius(4px);
-    font-weight: bold;
     text-align: center;
     padding: .7em 0px .75em;
     .box-shadow();
     height: 20px;
     line-height: 20px;
-    text-indent: -9999px;
+    /*text-indent: -9999px;*/
   }
   &:active {
     position: relative;
@@ -145,6 +143,7 @@ body {
     background-color: #00c051;
   }
 }
+/*
 .b_kscs{
   background:url(../img/t_kscs.png) center no-repeat;
 }
@@ -156,14 +155,13 @@ body {
 }
 .b_xyt{
   background:url(../img/t_xyt.png) center no-repeat;
-}
+}*/
 
 /* 标题 */
 .t1 {
   padding: 2px 0 6px;
   color:#E85C41;
   font-size: 20px;
-  font-weight: bold;
   text-align: center;
   border-bottom: 1px solid rgba(232,92,65,.3);
 }
@@ -216,7 +214,6 @@ body {
       background: #FFF1ED;
       a{
         color:#E85C41;
-        font-weight: bold;
       }
 
       i{
