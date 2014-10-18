@@ -7,6 +7,15 @@ fis.config.set('roadmap.ext.less', 'css');
 // PNG8
 fis.config.set('settings.optimizer.png-compressor.type', 'pngquant');
 
+// 资源合并
+fis.config.set('modules.postpackager', 'simple');
+fis.config.set('pack', {
+    'static/js/lib.js': [
+        'static/js/zepto.min.js',
+        'static/js/template.js'
+    ]
+});
+
 fis.config.merge({
     roadmap : {
 		domain: '/csdr'
