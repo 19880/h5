@@ -75,6 +75,7 @@ body {
   top:0;
   background-repeat: no-repeat;
   background-position: center;
+  .blur(3px);
 }
 
 /* 大标题 */
@@ -97,6 +98,8 @@ body {
   background: rgba(255, 252, 245, .85);
   color: #191919;
   .border-radius(10px);
+  //box-shadow: rgb(225, 225, 225) 0 0.2em 0.2em;
+  border: 0.2em dashed rgba(232,92,65,.3);
 
   p {
     line-height: 1.4em;
@@ -109,13 +112,14 @@ body {
   a{
     display: inline-block;
     color: #FFF;
-    .border-radius(4px);
+    .border-radius(2em);
     text-align: center;
     padding: .7em 0px .75em;
     .box-shadow();
     height: 20px;
     line-height: 20px;
     /*text-indent: -9999px;*/
+    box-shadow: rgba(0, 0, 0, 0.298039) 0px -.35em 0.1em -0.1em inset;
   }
   &:active {
     position: relative;
@@ -182,7 +186,6 @@ body {
     border-color: #fff;
     background: #fff;
     font-size: 16px;
-    min-height: 43px;
     border-bottom: 1px solid #ebebeb;
     &:first-child {
       border-radius: 4px 4px 0 0;
@@ -191,12 +194,13 @@ body {
       border-radius: 0 0 4px 4px;
       border-bottom: 0px solid #fff !important;
     }
-    span {
+    a {
       cursor: pointer;
       display: block;
       padding: 11px 30px 9px 0;
       color: #262626;
       text-align: center;
+      min-height: 23px;
     }
 
     i{

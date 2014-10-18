@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="static/css/style.less"/>
 </head>
 <body class="p_start">
-    <div class="apage" style="background: url('static/img/bg-320.jpg') repeat"></div>
+    <div class="apage" style="background: url('static/img/20-53-48.jpg') repeat"></div>
     <div class="TopBgTitle">
         <div class="wj_title ">大学生消费观调查问卷</div>
     </div>
@@ -31,7 +31,7 @@
                 <p>{{topic}}</p>
                 <ul class="unstyled">
                     {{each opts as value i}}
-                    <li><i></i><span href="#{{if value.next}}next={{value.next}}{{else}}result={{value.result}}{{/if}}">{{value.text}}</span></li>
+                    <li><i></i><a href="#{{if value.next}}next={{value.next}}{{else}}result={{value.result}}{{/if}}">{{value.text}}</a></li>
                     {{/each}}
                 </ul>
             </script>

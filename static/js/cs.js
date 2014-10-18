@@ -55,13 +55,15 @@ $(function(){
         var _html = template('anshtml',_ans[_id]);
         //console.log(_html);
         $('#ans_inner').html(_html);
-        $('#ans_inner>ul.unstyled>li').click(function(){
+        $('#ans_inner>ul.unstyled>li>a').click(function(){
             var _this = this;
-            $(_this).addClass('checked');
+            $(_this).parent().addClass('checked');
 
             setTimeout(function(){
-                window.location.hash = $(_this).find('span').attr('href');
+                window.location.hash = $(_this).attr('href');
             },500);
+
+            return false;
         });
     }
 

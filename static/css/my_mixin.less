@@ -201,3 +201,10 @@
 .bgpos(@x, @y){
 	background-position:@x @y;
 }
+
+.blur(@blur) {
+  -webkit-filter: blur(@blur); /* Chrome, Opera */
+  -moz-filter: blur(@blur);
+  -ms-filter: blur(@blur);
+  filter: blur(@blur);
+}
