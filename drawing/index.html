@@ -1,0 +1,69 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Sketch.JS Demo | Filip Danic</title>
+	<link rel="stylesheet" type="text/css" href="static/css/canvas_style.css">
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="static/js/sketch.js"></script>
+	<!-- Author: Danic Filip, danicfilip.com -->
+</head>
+
+<body>
+	<div id="SketchTools">
+		<!-- Basic tools -->
+		<a href="#SketchPad" data-color="#000000" title="Black"><img src="static/img/black_icon.png" alt="Black"/></a>
+		<a href="#SketchPad" data-color="#ff0000" title="Red"><img src="static/img/red_icon.png" alt="Red"/></a>
+		<a href="#SketchPad" data-color="#00ff00" title="Green"><img src="static/img/green_icon.png" alt="Green"/></a>
+		<a href="#SketchPad" data-color="#0000ff" title="Blue"><img src="static/img/blue_icon.png" alt="Blue"/></a>
+		<a href="#SketchPad" data-color="#ffff00" title="Yellow"><img src="static/img/yellow_icon.png" alt="Yellow"/></a>
+		<a href="#SketchPad" data-color="#00ffff" title="Cyan"><img src="static/img/cyan_icon.png" alt="Cyan"/></a>
+		<br/>
+		<!-- Advanced colors -->
+		<a href="#SketchPad" data-color="#e74c3c" title="Alizarin"><img src="static/img/alizarin_icon.png" alt="Alizarin"/></a>
+		<a href="#SketchPad" data-color="#c0392b" title="Pomegrante"><img src="static/img/pomegrante_icon.png" alt="Pomegrante"/></a>
+		<a href="#SketchPad" data-color="#2ecc71" title="Emerald"><img src="static/img/emerald_icon.png" alt="Emerald"/></a>
+		<a href="#SketchPad" data-color="#1abc9c" title="Torquoise"><img src="static/img/torquoise_icon.png" alt="Torquoise"/></a>
+		<a href="#SketchPad" data-color="#3498db" title="Peter River"><img src="static/img/peterriver_icon.png" alt="Peter River"/></a>
+		<a href="#SketchPad" data-color="#9b59b6" title="Amethyst"><img src="static/img/amethyst_icon.png" alt="Amethyst"/></a>
+		<a href="#SketchPad" data-color="#f1c40f" title="Sun Flower"><img src="static/img/sunflower_icon.png" alt="Sun Flower"/></a>
+		<a href="#SketchPad" data-color="#f39c12" title="Orange"><img src="static/img/orange_icon.png" alt="Orange"/></a>
+		<br/>
+		<a href="#SketchPad" data-color="#ecf0f1" title="Clouds"><img src="static/img/clouds_icon.png" alt="Clouds"/></a>
+		<a href="#SketchPad" data-color="#bdc3c7" title="Silver"><img src="static/img/silver_icon.png" alt="Silver"/></a>
+		<a href="#SketchPad" data-color="#7f8c8d" title="Asbestos"><img src="static/img/asbestos_icon.png" alt="Asbestos"/></a>
+		<a href="#SketchPad" data-color="#34495e" title="Wet Asphalt"><img src="static/img/wetasphalt_icon.png" alt="Wet Asphalt"/></a>
+		<a href="#SketchPad" data-color="#ffffff" title="Eraser"><img src="static/img/eraser_icon.png" alt="Eraser"/></a>
+		<br/>
+		<!-- Size options -->
+		<a href="#SketchPad" data-size="1"><img src="static/img/pencil_icon.png" alt="Pencil"/></a>
+		<a href="#SketchPad" data-size="3"><img src="static/img/pen_icon.png" alt="Pen"/></a>
+		<a href="#SketchPad" data-size="5"><img src="static/img/stick_icon.png" alt="Stick"/></a>
+		<a href="#SketchPad" data-size="9"><img src="static/img/smallbrush_icon.png" alt="Small brush"/></a>
+		<a href="#SketchPad" data-size="15"><img src="static/img/mediumbrush_icon.png" alt="Medium brush"/></a>
+		<a href="#SketchPad" data-size="30"><img src="static/img/bigbrush_icon.png" alt="Big brush"/></a>
+		<a href="#SketchPad" data-size="60"><img src="static/img/bucket_icon.png" alt="Huge bucket"/></a>
+		<br/>
+		<a href="#SketchPad" data-download='png' id="DownloadPng">Download .PNG</a>
+		<a href="#SketchPad" id="Upload">Upload</a>
+		<br/>
+	</div>
+	
+	<canvas id="SketchPad" width="590" height="590"></canvas>
+
+	<script type="text/javascript">
+	  $(function() {
+	    $('#SketchPad').sketch();
+
+	    $('#Upload').click(function () {
+		    $.post('/upload_image.php', { data: $('#SketchPad').get(0).toDataURL() }, function () {
+		         console.log('uploaded');
+		    });
+		});
+	  });
+	</script>
+        
+</body>
+
+</html>
