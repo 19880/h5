@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>一个字展望2015</title>
+<script>
+var LANG = {
+	c1 : '给自己一个承诺，手写1个字展望我的2015。你也来试试，我们互相监督！'
+}
+</script>
+<style type="text/css">
+*{-webkit-text-size-adjust:none;}
+html{height:100%;}
+body{margin:0 auto;padding:0;max-width:640px;height:100%;font-size:32px;}
+#showPage, #editorPage{max-width:640px;background:url(images/bg.jpg) no-repeat 0 0;background-size:100%;margin:0 auto;height:100%;display:none;}
+.imgBox, .canvasBox{position:relative;padding:1.78125em 0 0 0.75em;width:18.4375em;height:18.4375em;}
+#canvas{background:url(images/paper.jpg) no-repeat 0 0 #efecea;background-size:100%;}
+#completeImg, #showImg{width:18.4375em;height:18.4375em;}
+#paperLogo{position:absolute;top:2.28125em;left:1.34375em;width:3.15625em;height:1.21875em;}
+.paperCorner{position:absolute;right:0;bottom:0;width:3.21875em;height:1.875em;}
+
+.btn_01{background:#ff7800;color:#fff723;font-size:0.9375em;height:2.3em;line-height:2.3em;padding:0 1.3em;box-shadow:0 0.2em 0 #ae5200;border-radius:3em;text-shadow:0.03em 0.03em 0.03em #333;display:inline-block;text-decoration:none;}
+.btn_02{background:#f1f0eb;color:#82593e;font-size:0.8125em;height:2.69em;line-height:2.69em;padding:0 1em;border-radius:0.38em;border:1px solid #82593e;display:inline-block;text-decoration:none;margin-right:0.2em;}
+#penColor{display:inline-block;width:1em;height:1em;background:#000;vertical-align:middle;margin-right:0.3em;margin-top:-0.3em;}
+.btnBox{position:relative;padding:1.03125em 0 0 0.75em;}
+.palette{border:1px solid #82593e;position:absolute;bottom:1em;left:0.75em;width:5.95em;list-style:none;padding:0;display:none;}
+.palette li{line-height:3.125em;font-size:0.75em;padding:0;color:#fff;text-align:center;}
+.center{text-align:center;}
+
+#shareAlert,#uploadPage{background:rgba(0, 0, 0, .8);width:100%;height:100%;position:absolute;left:0;top:0;z-index:2000;display:none;}
+.shareArr{width:2.625em;height:5.1875em;background:url(images/arr.png) no-repeat 0 0;position:absolute;right:1.5em;top:1.5em;background-size:100%;}
+.shareText{text-align:center;font-size:1.75em;line-height:1.85em;color:#fff;position:absolute;top:5.0em;width:100%;}
+.shareTextWB{text-align:center;font-size:1.40625em;line-height:1.85em;color:#fff;position:absolute;top:11em;width:100%;}
+
+#uploadPage p{margin:0;padding:0;text-align:center;font-size:1.40625em;line-height:1.85em;color:#fff;position:absolute;top:8em;width:100%;}
+#uploadPage p span{font-size:0.6em;}
+.memo{padding:1em 0 0 0.75em;font-size:1em;color:#333;}
+.othersShare{margin-top:11em;text-align:center;font-size:1em;color:#fff;}
+.othersShare img{width:3em;height:3em;margin:0 0.5em;}
+
+#ad_container{position:fixed;bottom:0;left:0;width:100%;max-width:640px;}
+</style>
+</head>
+<body>
+<div id="editorPage">
+	<div class="canvasBox"><canvas id="canvas"></canvas><img id="paperLogo" alt=""><img src="images/paper_corner.png" class="paperCorner" alt=""></div>
+	
+	<div class="btnBox" id="btnBox">
+		<a class="btn_02" id="btnPenColor" href="javascript:void(0)"><span id="penColor"></span>换个颜色</a>
+		<a class="btn_02" id="clearCanvas" href="javascript:void(0)">清空重写</a>
+		<a class="btn_01" id="shareBtn" href="javascript:void(0)">上传并分享</a>
+		<ol class="palette" id="palette">
+			<li value="rgba(111,138,37,.6)" style="background:rgb(111,138,37)">绿色</li>
+			<li value="rgba(255,198,2,.6)" style="background:rgb(255,198,2)">黄色</li>
+			<li value="rgba(51,111,172,.6)" style="background:rgb(51,111,172)">蓝色</li>
+			<li value="rgba(0,0,0,.6)" style="background:rgb(0,0,0)">黑色</li>
+			<li value="rgba(203,0,0,.6)" style="background:rgb(203,0,0)">红色</li>
+		</ol>
+	</div>
+	<div class="memo">在空白处手写，然后点击上传并分享。</div>
+</div>
+
+<div id="showPage">
+	<div class="imgBox"><img id="showImg" alt=""><img src="images/paper_corner.png" class="paperCorner" alt=""></div>
+	<div class="btnBox center"><a class="btn_02" href="http://mp.weixin.qq.com/s?__biz=MjM5NzI3NDg4MA==&mid=202455074&idx=4&sn=be203760d2436a7812e0b7a7742c809d#rd">关注我们</a> <a class="btn_01" id="toEditorBtn" href="javascript:void(0)" style="margin-left:1em">我要试试</a></div>
+	<div class="memo" id="saveMemo">关注我们，看更多<a href="http://mp.weixin.qq.com/s?__biz=MjM5NzI3NDg4MA==&mid=202455074&idx=4&sn=be203760d2436a7812e0b7a7742c809d#rd">优秀作品</a></div>
+</div>
+
+<div id="uploadPage"></div>
+
+<div id="shareAlert"><div class="shareArr"></div><div class="shareText"><!-- 请点击右上角<br>点击【分享到朋友圈】 -->图片生成完成，点这里</div><!-- <div class="shareTextWB">更多精彩请登录人民微博</div> --></div>
+
+<script>
+var isWX =  navigator.userAgent.indexOf('MicroMessenger') !== -1;
+window.shareData = {
+	image: "http://i0.peopleurl.cn/nmsgimage/wx/2014122913/s_2014122913141983107150145771.jpg",
+	link: getRandomPath(),
+	title: "给自己一个承诺，手写1个字展望我的2015。你也来试试吧，我们互相监督！" + getRanomTitle(),
+	content: ""
+};
+document.title = shareData.title + getRanomTitle();
+
+function getRanomTitle(){
+	if(!isWX){return ''}
+	var t = ('甲 乙 丙 丁 戊 己 庚 辛 壬 癸').split(' ');
+	var m = Math.abs(Math.round(new Date().getTime() / 600000) - 2366651); //10分钟
+	m = m.toString();
+	var str = '';
+	for (var i = 0; i < m.length; i++) {
+		str += t[parseInt(m.substr(i, 1))];
+	};
+	return '标记' + str;
+};
+function getRandomPath(id){
+	return 'http://t.people.com.cn/' + Math.round(Math.random() * 4) + String.fromCharCode(97 + Math.round(Math.random() * 6)) + String.fromCharCode(97 + Math.round(Math.random() * 13)) + '/' + (id || 'index.html');
+};
+function setShareData(title, link, img){
+	var id = link.match(/\/(\d+)$/);
+	if(id){
+		id = id[1];
+	}else{
+		id = '';
+	};
+	window.shareData.image = img;
+	window.shareData.link = getRandomPath(id);
+	window.shareData.title = title + getRanomTitle();
+	document.title = title + getRanomTitle();
+}
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	WeixinJSBridge.on('menu:share:appmessage', function(argv) {
+		WeixinJSBridge.invoke('sendAppMessage', {
+			"img_url": shareData.image,
+			"link": shareData.link,
+			"desc": shareData.content,
+			"title": shareData.title
+		}, function(res) {
+			window.location.href = shareData.link;
+		})
+	});
+
+	WeixinJSBridge.on('menu:share:timeline', function(argv) {
+		WeixinJSBridge.invoke('shareTimeline', {
+			"img_url": window.shareData.image,
+			"img_width": "480",
+			"img_height": "480",
+			"link": shareData.link,
+			"desc": shareData.content,
+			"title": shareData.title
+		}, function(res) {
+			window.location.href = shareData.link;
+		});
+	});
+	WeixinJSBridge.on('menu:share:weibo', function(argv) {
+		WeixinJSBridge.invoke('shareWeibo', {
+			"content": shareData.title,
+			"url": window.shareData.link
+		}, function(res) {
+			window.location.href = shareData.link;
+		});
+	});
+}, false);
+
+function shareSina(){
+	window.open('http://service.weibo.com/share/share.php?url=' + encodeURIComponent(shareData.link) + '&appkey=&title=' + encodeURIComponent(shareData.title.replace('手写一个字展望我的2015','#手写一个字展望我的2015#') + '建议用手机客户端来写。') + '&pic=' + encodeURIComponent(shareData.image.replace('s_', '')) + '&ralateUid=&language=&sudaref=service.weibo.com');
+};
+function shareTencent(){
+	window.open('http://share.v.t.qq.com/index.php?c=share&a=index&url=' + encodeURIComponent(shareData.link) + '&title=' + encodeURIComponent(shareData.title.replace('手写一个字展望我的2015','#手写一个字展望我的2015#') + '建议用手机客户端来写。') + '&pic=' + encodeURIComponent(shareData.image.replace('s_', '')));
+};
+function sharePeople(){
+	window.open('http://t.people.com.cn/toshareinfo.action?url=' + encodeURIComponent(shareData.link) + '&appkey=&title=' + encodeURIComponent(shareData.title.replace('手写一个字展望我的2015','#手写一个字展望我的2015#') + '建议用手机客户端来写。') + '&pic=' + encodeURIComponent(shareData.image.replace('s_', '')) + '&site=');
+};
+if(!isWX){
+	document.getElementById('shareAlert').innerHTML = '<div class="othersShare">分享：<a href="javascript:void(0)" onclick="shareSina()"><img src="http://i0.peopleurl.cn/microblog-v3/2014subject/1216_oneword/images/sina.png"></a> <a href="javascript:void(0)" onclick="sharePeople()"><img src="http://i0.peopleurl.cn/microblog-v3/2014subject/1216_oneword/images/people.png"></a> <a href="javascript:void(0)" onclick="shareTencent()"><img src="http://i0.peopleurl.cn/microblog-v3/2014subject/1216_oneword/images/tencent.png"></a></div>';
+};
+
+if(top.location!=self.location){top.location = self.location};
+</script>
+<script type="text/javascript" src="paper_32.js"></script>
+
+<div id="ad_container"></div>
+<script type="text/javascript" id="gdt-3010200097988655">
+var TencentGDT = TencentGDT || [];
+TencentGDT.push({
+posid:'3010200097988655',
+type:'banner',
+containerid:'ad_container',//如果容器不合适，可自定义广告容器
+filltype:'full',//填充方式，full：填满宽度，fix:固定大小,
+appid: "1103583630"
+});
+
+(function() {
+var doc=document, h=doc.getElementsByTagName('head')[0], 
+s=doc.createElement('script');
+s.async=true; 
+s.src='http://qzs.qq.com/qzone/biz/res/i.js';
+h && h.insertBefore(s,h.firstChild)
+})()
+
+</script>
+
+<script>
+if(screen.width/screen.height > 1){
+	document.getElementById('ad_container').style.display = 'none';
+}else if(screen.width/screen.height > 0.66){
+	document.getElementById('btnBox').style.paddingTop = '0.6em';
+}
+</script>
+
+</body>
+</html>
