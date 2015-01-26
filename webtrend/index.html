@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=no,width=device-width, minimum-scale=0.5, maximum-scale=1.0"/>
+  <title>2014Q2百度移动互联网发展趋势报告</title>
+   <link rel="stylesheet" href="lib/style.css?t=1407829109291">
+</head>
+<body>
+<!--loading-->
+<div id="loading">
+  <div id="spinner"></div>
+</div>
+<!--loading-->
+
+<div id="cover" class="report-cover">
+    <img src="img/bg.png" alt="" class='l1' width='360' id='img1' />
+    <img src="img/bg02.png" alt="" class='l2' width='114' id='img2' />
+    <img src="img/covertitle.png" alt="" class='tl2' width='216' id='img3' />
+    <img src="img/MBU1_LOGO.png" width="105" id='img4'>
+    <div class="cover-guide">
+      <div class="arrow-up"></div>
+      <span style='color:white'>滑动查看</span>
+    </div>
+</div>
+
+<div class="swiper-container" id='pages'>
+  <div class="swiper-wrapper">
+      <div class="swiper-slide page" id="page1">
+        <div class="title">
+          <div class="page-num num-1"></div>
+          智能机大盘<a class="toggle-tips" data-n='0'><span class="tips-icon"></span></a>增速不减，<br/>
+          人口普及率已超30%。
+        </div>
+        <div class="area-grid">
+          <span>5</span>
+          <span>4</span>
+          <span>3</span>
+          <span>2</span>
+          <span>1</span>
+          <span>0</span>
+        </div>
+        <div class="scroll-container area-container">
+          <div class="swiper-wrapper">
+            <div id='area' class="chart-container area swiper-slide" onselect = "return false" style='background:none'></div>
+          </div>
+        </div>
+        <p class='charttitle t1' style='margin-top:-10px;'>智能机大盘规模</p>
+        <p class='charttitle t2' style='margin-top:-10px;'>(12年Q2 – 14年Q2，单位：亿)</p>
+        <div class="footer">
+          <div class="mobile-logo"></div>
+          <div class='pull-right'>
+            <div class="arrow-up"></div>
+            <span>滑动查看</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide page" id="page2">
+        <div class="title">
+          <div class="page-num num-2"></div>三年来，智能机大盘中<br/>
+          Android和iPhone阵营<br/>
+          的份额差距不断扩大
+        </div>
+        <div id="donut" class="chart-container donut" onselect = "return false"></div>
+        <p class='charttitle t1' style='margin-top:-20px;'>中国智能机大盘各系统用户占比</p>
+        <div class='qselect-dots'>
+          <img src="img/donuts.png" alt="" width="214">
+          <img src="img/p2-highlight.png" alt="" id="p2-highlight" width="17">
+        </div>
+        <ul class="qselect">
+          <li>11Q2</li>
+          <li>12Q2</li>
+          <li>13Q2</li>
+          <li>14Q2</li>
+        </ul>
+        <div class="footer">
+          <div class="mobile-logo"></div>
+          <div class='pull-right'>
+            <div class="arrow-up"></div>
+            <span style="color:white">滑动查看</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide page" id="page3">
+        <div class="title">
+          <div class="page-num num-3"></div>iPhone用户日使用时长<a class="toggle-tips" data-n='1'><span class="tips-icon"></span></a>领<br/>
+          先Android用户，在通信&<br/>
+          社交等应用<a class="toggle-tips" data-n='2'><span class="tips-icon"></span></a>上花时间更多
+        </div>
+        <div class="timecount">
+          <div class="block">
+            <p>iPhone用户人均<br/>
+            日使用时长</p>
+            <div class="apple_158"></div>
+            <span class='text-min'>分钟</span>
+          </div>
+          <div class="block">
+            <p>Android用户人均<br/>
+            日使用时长</p>
+            <div class="android_143"></div>
+            <span class='text-min'>分钟</span>
+          </div>
+        </div>
+        <div class="pies-container">
+          <div id="pie-1" class="chart-container pie" onselect = "return false"></div>
+          <div id="pie-2" class="chart-container pie" onselect = "return false"></div>
+          <div id="pie-3" class="chart-container pie" onselect = "return false"></div>
+          <div id="pie-4" class="chart-container pie" onselect = "return false"></div>
+          <div class="chart-container pie" onselect = "return false" style='background:none'>
+          Android与iPhone用户的分类应用时长对比(14Q2)<br/>
+          <div class="piesample piesample1"></div><span>Android</span><br/>
+          <div class="piesample piesample2"></div><span>iPhone</span>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="mobile-logo"></div>
+          <div class='pull-right'>
+            <div class="arrow-up"></div>
+            <span>滑动查看</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide page" id="page4">
+          <div class="title"><div class="page-num num-4"></div>尽管两大平台的用户偏好<br/>
+            不同，但用户需求的变化<br/>
+            趋势基本一致<br/></div>
+
+          <div class="column-grid">
+            <span>90%</span>
+            <span>60%</span>
+            <span>30%</span>
+            <span>0%</span>
+            <span>-30%</span>
+          </div>
+          <div class="scroll-container2 column-container">
+            <div class="swiper-wrapper">
+              <div id="column" class="chart-container column swiper-slide" onselect = "return false" style='background:none'></div>
+            </div>
+          </div>
+          <div style='text-align:center;height:30px;'>
+            <div class="piesample piesample1"></div><span>Android</span>
+            &nbsp;
+            <div class="piesample piesample2"></div><span>iPhone</span>
+          </div>
+          <p class='charttitle t1' style='margin-top:-2px;'>主要分类应用的DAU与用户大盘的相对增速</p>
+          <p class='charttitle t2' style='margin-top:-12px;'>（14Q2 vs 13Q3）</p>
+          <div class="footer">
+            <div class="mobile-logo"></div>
+            <div class='pull-right'>
+              <div class="arrow-up"></div>
+              <span>滑动查看</span>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide page" id="page5">
+        <div class="title"><div class="page-num num-5"></div>腾讯和百度在两大平台的<br/>
+        领先地位均比较稳固<br/></div>
+        <div id="bubble" class="chart-container bubble" onselect = "return false"></div>
+        <p class='charttitle t1'>Top 5移动互联网公司的人均应用安装量<a class="toggle-tips" data-n='3'><span class="tips-icon"></span></a></p>
+        <p class='charttitle t2' style='margin-top:-10px;'>（14Q2，单位：个/人）</p>
+        <div class='explan'>
+          <h1>解读</h1>
+          <p>以百度公司为例，全体Android用户平均每人<br/>
+          手机里安装了2.8个百度系的应用</p>
+        </div>
+        <div class="footer">
+            <div class="mobile-logo"></div>
+            <div class='pull-right'>
+              <div class="arrow-up"></div>
+              <span>滑动查看</span>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide page" id="page6">
+        <div class="title"><div class="page-num num-6"></div>百度移动搜索用户规模持续<br/>
+        快速增长,MAU<a class="toggle-tips" data-n='4'><span class="tips-icon"></span></a>破5亿</div>
+        <div id="p-donut" class="chart-container p-donut" onselect = "return false">
+          <div class="p-donut-center">
+            2014Q2<span class="em"></span>智能机用户使用<br>百度移动搜索
+          </div>
+        </div>
+        <p class="charttitle t1" style='opacity:0.7'>智能机用户使用百度移动搜索频率<br/>
+          （14年Q2）</p>
+        <div class="footer">
+            <div class="mobile-logo"></div>
+            <div class='pull-right'>
+              <div class="arrow-up"></div>
+              <span>滑动查看</span>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-slide page" id="page7">
+        <div class="title"><div class="page-num num-7"></div>百度每日处理移动搜索总<br/>
+        次数半年增长48%,全面连<br/>
+        接用户与服务<br/></div>
+        <div id="round" class="chart-container round" onselect = "return false"></div>
+        <p class="charttitle t1" style='padding-top:10px;opacity:0.7'>
+          百度移动搜索检索词分类占比<br/>(点击中心切换)</p>
+        <div class="footer">
+          <div class="mobile-logo"></div>
+          <div class='pull-right'>
+            <div class="arrow-up"></div>
+            <span>滑动查看</span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide page" id="page8">
+        <div class="title">
+          <div class="page-num num-8"></div>
+          移动搜索发展趋势
+        </div>
+        <div class="p8-content">
+          <h1 class='bar title1 g1 g'>趋势1：交互移动化</h1>
+          <p class='content1 g1 g'>语音和图像输入等新型交互方式日益受到移动<br/>
+            搜索用户的欢迎。</p>
+          <h1 class='bar title2 g2 g'>趋势2：场景移动化</h1>
+          <p class='content2 g2 g'>百度基于用户地理位置提供符合使用场景信息，
+            地理位置相关的生活服务类需求每日响应超过
+            <span class='strong'>亿级规模</span></p>
+          <h1 class='bar title3 g3 g'>趋势3：服务闭环化</h1>
+          <p class='content3 g3 g'>百度移动搜索通过轻应用打通服务闭环。五一<br/>
+            期间仅去哪儿一家的门票预订量就增长了<br/>
+            <span class='strong'>25倍</span></p>
+          <h1 class='bar title4 g4 g'>趋势4：知识图谱化 </h1>
+          <p class='content4 g4 g'>百度借知识图谱更智慧地向移动用户提供信息<br/>
+          与服务</p>
+        </div>
+        <div class="footer">
+            <div class="mobile-logo"></div>
+            <div class='pull-right'>
+              <div class="arrow-up"></div>
+              <span>滑动查看</span>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="swiper-slide back-cover" id="bcover">
+    <img class="book" src="img/book.png" />
+    <img class="share weixin" src="img/share.png" />
+    <div id="pdf-link" class="link"><a href="javascript:;" target="_blank">点击这里查看完整版报告</a></div>
+    <div class="info">
+      <div style="font-size:10px;margin:10px 5px 20px;">联合撰写</div>
+      <div style="font-size:12px;margin:-10px 5px 5px;">百度移动云事业部</div>
+      <div style="font-size:12px;margin:5px 5px 8px;">百度商业分析部</div>
+      <div style="border-top:#a49fae 1px solid;font-size:10px;text-indent:5px; padding-top:5px;marign-top:10px;">设计支持</div>
+      <div style="background:url(img/logos.png) no-repeat 0px 0px;text-indent:60px;background-size: 45px;font-size:10px;margin:6px 5px;height: 14px;">百度移动用户体验部</div>
+      <div style="border-top:#a49fae 1px solid;font-size:10px;text-indent:5px; padding-top:5px;marign-top:10px;">技术支持</div>
+      <div id="shushuo" style="background:url(img/logos.png) no-repeat 0px -15px;text-indent:60px;background-size: 45px;font-size:10px;margin:6px 5px;height: 17px;">数说可视化团队@FEX</div>
+    </div>
+</div>
+<!--弹窗-->
+<div class='alert' id='alert'>
+  <div class="msg-window">
+    <div class="msg-content"></div>
+    <div class='btn-ok'>确定</div>
+  </div>
+</div>
+<!--弹窗-->
+
+<script src="lib/script.js?t=1407829106485"></script>
+</body>
+</html>
