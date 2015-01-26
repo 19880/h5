@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Let's Change the World Together！</title>
+	<link href="css/index.css?v=20140922" type="text/css" rel="stylesheet" />
+	<style id="animation"></style>
+</head>
+<body>
+<div class="wrapper" id="wrap" style="display:none">
+	<div class="page" id="firscreen">
+		<div class="sec zoom">
+			<div class="logo_wrp">
+				<div class="logo logoup"></div>
+			</div>
+			<div class="milk_1 fadein1s"></div>
+			<div class="milk_2 fadein1_2s"></div>
+			<div class="milk_3 fadein1_4s"></div>
+			<div class="milk_4 fadein1_6s"></div>
+			<div class="msk_1 fadein1_6s layer" data-depth="1.00"></div>
+			<div class="msk_2 fadein1_6s layer" data-depth="0.60"></div>
+			<div class="msk_3 fadein1_6s layer" data-depth="0.20"></div>
+			<div class="thrangel down6" id="triangel"></div>
+			<div class="slogan_1 down5"></div>
+			<div class="slogan_2 down4"></div>
+			<div class="slogan_3 down3"></div>
+			<div class="slogan_4 down2"></div>
+			<div class="slogan_5 down"></div>
+			<div class="cities textup1s"></div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec zoom">
+			<div class="logo_wrp">
+				<div class="logo logoup"></div>
+			</div>
+			<div class="desc">
+				京东集团旗下拍拍网是国内最知名和最受消费者欢迎的电商开放平台之一。拍拍网扶持包括大学生、中小商家等广泛的电子商务创业者群体，并致力于建立公平，透明的商家生态，在充分保障中小商家的权益和健康成长的同时，服务好最终消费者。新拍拍,新起点,等你来!
+			</div>
+			<img src="images/waiting.png?v=20141731" width="300" border="0" />
+			<div class="sliddown start"></div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="subpage zoom">
+				<div class="logo_wrp">
+					<div class="logo ico_3_6 logoup"></div>
+				</div>
+				<div class="title fadein1s"><div class="text ico_3_6"></div></div>
+				<div class="bg toright"></div>
+				<div class="skee_boy skee clk2right">
+					<div class="skiing doSkiing" id="skee_boy"></div>
+				</div>
+				<div class="slid2right">
+					<i class="homebreathing"></i><i></i>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责产品的技术后台开发、维护</p>
+					<p>负责系统相关的设计和开发，开发具有高性能和高可靠的系统</p>
+					<p>参与相关产品需求讨论与产品系统架构的设计和优化工作</p>
+					<h3>岗位要求</h3>
+					<p>计算机或者相关专业本科以上学历；
+					<p>熟练掌握相关技术，熟悉互联网研发模式，有整体架构意识，具备系统分析能力</p>
+					<p>具备良好的分析解决问题能力，责任心强，良好的对外沟通和团队协作能力，主动，好学</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责产品策划工作的执行，根据产品策划案，负责制定相关板块策划细案</p>
+					<p>在应用产品设计的每个阶段，充分与程序、美术等相关人员协调并讲解设计意图，确保应用产品的高品质</p>
+					<h3>岗位要求</h3>
+					<p>计算机或者相关专业本科以上学历</p>
+					<p>热爱移动互联网，具备良好的分析解决问题能力，责任心强，良好的对外沟通和团队协作能力，主动，好学</p>
+					<p>具备相关经验优先</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责移动平台客户端的应用开发</p>
+					<p>负责手机平台应用软件的需求分析、功能设计、编码和测试</p>
+					<p>负责参与产品需求分析并参与技术实施方案设计</p>
+					<h3>岗位要求</h3>
+					<p>计算机或者相关专业本科以上学历；
+					<p>热爱移动互联网，具备良好的分析解决问题能力，主动，好学</p>
+					<p>具备相关经验优先</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>从事互联网电子商务业务的技术运营和规划工作</p>
+					<p>规划及优化安全、高性能的服务架构，保障及分析提高服务稳定性、可用性</p>
+					<h3>岗位要求</h3>
+					<p>熟悉linux操作系统，对系统性能相关问题有教深刻理解</p>
+					<p>熟悉SHELL，掌握php/perl/python任一一种编程语言</p>
+					<p>责任感强、有较强的逻辑思维能力、沟通能力,有较强的项目管理及推动力</p>
+				</div>
+			</div>
+		</div>
+		<div class="tabs zoom" style="display:none">
+			<div class="moz">
+				<div class="arrow"></div>
+				<div class="tab">
+					<em></em>
+					<span>后台开发<br />工程师</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>产品经理</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>无线开发<br />工程师</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>运维<br />工程师</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="subpage zoom">
+				<div class="logo_wrp">
+					<div class="logo ico_3_6 logoup"></div>
+				</div>
+				<div class="title fadein1s"><div class="text ico_3_6"></div></div>
+				<div class="cry_boy jump clk2right">
+					<div class="ico boy crying"></div>
+				</div>
+				<div class="petal_1 torighttop"><i class="ico keeprt"></i></div>
+				<div class="petal_2 toright"><i class="ico keepr"></i></div>
+				<div class="petal_3 toleft"><i class="ico keepl"></i></div>
+				<div class="slid2right">
+					<i class="homebreathing"></i><i></i>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责商家的日常运营和管理工作，包括指标监控、营销活动、促销推广等</p>
+					<p>合理安排及调配品牌上线计划，有效完成业绩指标</p>
+					<p>制定价格策略，通过数据分析，利用各种运营手段提高品牌销售额</p>
+					<h3>岗位要求</h3>
+					<p>本科学历，市场营销、管理类相关专业</p>
+					<p>对商品运营、市场销售活动策划有较好的认识</p>
+					<p>对品类市场以及当季卖点有很好的研究，对商品管理、价格管理等有较好的经验</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>支持拍拍网运营体系运营、业务、行业、战略相关的数据需求和数据分析</p>
+					<p>与数据产品、研发、运营团队紧密合作，定期进行内部数据提取、统计和分析，同时对接各部门的数据需求</p>
+					<h3>岗位要求</h3>
+					<p>具备数据处理和分析能力，熟练运用Microsoft Excel，同时善于运用MySQL、SQLServer、SPSS 等统计软件/工具者优先考虑</p>
+					<p>具备优秀的英语阅读和书写能力</p>
+					<p>优秀的表达、沟通与协调能力、团队合作精神、保密意识</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>自主开展校园地面活动推广拍拍校园在校园，提高覆盖与使用。并通过激励，实现拍拍校园用户活跃</p>
+					<p>代表拍拍校园与学校社团、学生会等组织进行沟通以达成合作关系</p>
+					<p>在线上各大论坛网站进行拍拍校园的宣传推广, 维护产品与公司形象</p>
+					<h3>岗位要求</h3>
+					<p>本科学历，热爱JD校园工作，认可京东的团队文化 </p>
+					<p>良好的合作意识和抗压能力，开放的心态和主动的学习意识, 积极参与校园活动，人脉广泛，担任社团负责人者优先</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+						<p>对商家入驻及续签相关商业资质的审核，确保符合平台的标准</p>
+						<p>负责与第三方征信公司沟通协调，汇总问题并提出有效建议</p>
+						<p>负责收集国内外各电商平台的规则变动，并进行数据挖掘</p>
+					<h3>岗位要求</h3>
+						<p>本科学历，法律或管理类专业优先</p>
+						<p>良好的心理承受能力，能适应一定的工作压力</p>
+				</div>
+			</div>
+		</div>
+		<div class="tabs zoom" style="display:none">
+			<div class="moz">
+				<div class="arrow"></div>
+				<div class="tab">
+					<em></em>
+					<span>产品运营</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>数据分析</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>校园APP<br />推广</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>平台<br />生态管理</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="subpage zoom">
+				<div class="logo_wrp">
+					<div class="logo ico_3_6 logoup"></div>
+				</div>
+				<div class="title fadein1s"><div class="text ico_3_6"></div></div>
+				<div class="girl girlup clk2right">
+					<em class="toleft"></em><em class="toleft"></em><em class="toleft"></em><em class="toright"></em><em class="toright"></em>
+					<i></i>
+					<div class="eyeshine eyeshining">
+						<i class="looking"></i>
+					</div>
+				</div>
+				<div class="slid2right">
+					<i class="homebreathing"></i><i></i>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责网站相关活动的策划与设计，网站美工处理</p>
+					<p>负责专题销售页面设计，flash等流媒体动画</p>
+					<h3>岗位要求</h3>	
+					<p>了解网站的业务流程和用户使用习惯</p>
+					<p>精通各类应用软件，包括Photoshop、Flash、Dreamweaer、illustator，熟悉Html、css等</p>
+					<p>有较强的学习能力、沟通能力和领悟能力</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责为电商活动进行前期的视觉推导并完成设计方案</p>
+					<p>负责为互联网新产品与新功能提供创意策划并提供用户界面的设计方案</p>
+					<p>负责参与前瞻性产品的创意设计和动态DEMO的实现</p>
+					<h3>岗位要求</h3>
+					<p>本科或以上学历，相关行业的工作经验，热爱设计、拥有宽广的行业（平面设计、UI设计、互联网）视野与时尚的审美标准</p>
+					<p>深厚的设计理论与娴熟的设计技巧，强大的执行力与强烈的创新欲望</p>
+					<p>富有激情、积极主动、关注细节、学习能力强，具备电子商务活动的设计经验者优先</p>
+				</div>
+			</div>
+		</div>
+		<div class="tabs zoom" style="display:none">
+			<div class="moz">
+				<div class="arrow"></div>
+				<div class="tab">
+					<em></em>
+					<span>网页设计师（运营）</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>活动设计</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="subpage zoom">
+				<div class="logo_wrp">
+					<div class="logo ico_3_6 logoup"></div>
+				</div>
+				<div class="title fadein1s"><div class="text ico_3_6"></div></div>
+				<div class="girl fly clk2right">
+					<em class="moveround2"></em>
+					<em class="moveround1"></em>
+					<em class="moveround3"></em>
+					<em class="moveround4"></em>
+					<i class="hover"></i>
+				</div>
+				<div class="slid2right">
+					<i class="homebreathing"></i><i></i>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>负责日常拍拍所有广告位的素材审核、更新</p>
+					<p>整理汇总广告部与财务法务行政流程梳理与对接执行</p>
+					<p>协助销售整理网站与广告相关的数据并总结分析</p>
+					<h3>岗位要求</h3>
+					<p>熟练使用POWERPOINT等OFFICE工具，有具体策划执行项目的案例</p>
+					<p>对公司内部的产品和需求有深刻理解，熟悉拍拍广告素材点击和相关流量数据</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>根据业务和市场发展状况，制定相关内容策划方案及文字撰写</p>
+					<p>根据业务需求，结合热点/节点事件，制定符合客户需求的整合营销方案和传播内容</p>
+					<p>了解公司和行业趋势，能不断创新</p>
+					<h3>岗位要求</h3>
+					<p>有3年以上市场营销策划经验</p>
+					<p>有独立的策划或者品牌策划能力、文字功底好</p>
+					<p>对市场和数据有敏锐的洞察力和分析能力</p>
+					<p>有创新欲望，乐于尝试新事物</p>
+				</div>
+			</div>
+			<div class="subpage zoom hidechild">
+				<div class="job_type"></div>
+				<div class="content">
+					<h3>岗位职责</h3>
+					<p>提前做好国内外母婴市场的调研工作，收集最新的流行资讯，预测下一季商品，制定产品规划</p>
+					<p>负责行业内产品调研分析、采购选款、产品定价、促销方案策划等</p>
+					<h3>岗位要求</h3>
+					<p>热爱互联网行业，对国际国内一、二线品牌有一定了解</p>
+					<p>对数字敏感，有较强的数据分析能力</p>
+					<p>具备良好的沟通协调能力，高度责任心和工作热情</p>
+				</div>
+			</div>
+		</div>
+		<div class="tabs zoom" style="display:none">
+			<div class="moz">
+				<div class="arrow"></div>
+				<div class="tab">
+					<em></em>
+					<span>广告支持</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>买手</span>
+				</div>
+				<div class="tab">
+					<em></em>
+					<span>媒介投放</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="title ico zoom">校园招聘宣讲流程</div>
+			<div class="tables" id="tables">
+				<div class="table">
+					<div class="th zoom">
+						<em>区域</em><em>城市</em><em>时间 / 学校</em>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							华北
+						</div>
+						<div class="tdl">
+							<span class="td">北京</span><span class="tdm">
+								<span class="tdi">09.22 &nbsp; &nbsp; 中国人民大学</span>
+								<span class="tdi dark">09.22 &nbsp; &nbsp; 北京邮电大学</span>
+								<span class="tdi">10.09 &nbsp; &nbsp; 清华大学</span>
+								<span class="tdi dark">10.13 &nbsp; &nbsp; 北京外国语大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">天津</span><span class="tdm">
+								<span class="tdi">09.24 &nbsp; &nbsp; 天津大学</span>
+								<span class="tdi dark">09.24 &nbsp; &nbsp; 南开大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">济南</span><span class="tdm">
+								<span class="tdi">09.25 &nbsp; &nbsp; 山东大学</span>
+							</span>
+						</div>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							西部
+						</div>
+						<div class="tdl">
+							<span class="td">西安</span><span class="tdm">
+								<span class="tdi dark">10.13 &nbsp; &nbsp; 西安电子科技大学</span>
+								<span class="tdi">10.14 &nbsp; &nbsp; 西安交通大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">成都</span><span class="tdm">
+								<span class="tdi dark">10.16 &nbsp; &nbsp; 四川大学</span>
+								<span class="tdi">10.17 &nbsp; &nbsp; 四川大学</span>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="table">
+					<div class="th zoom">
+						<em>区域</em><em>城市</em><em>时间 / 学校</em>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							东北
+						</div>
+						<div class="tdl">
+							<span class="td">哈尔滨</span><span class="tdm">
+								<span class="tdi">09.23 &nbsp; &nbsp; 哈尔滨工业大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">沈阳</span><span class="tdm">
+								<span class="tdi dark">09.25 &nbsp; &nbsp; 东北大学</span>
+							</span>
+						</div>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							华南
+						</div>
+						<div class="tdl">
+							<span class="td">厦门</span><span class="tdm">
+								<span class="tdi">10.10 &nbsp; &nbsp; 厦门大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">广州</span><span class="tdm">
+								<span class="tdi dark">10.13 &nbsp; &nbsp; 中山大学</span>
+								<span class="tdi">10.13 &nbsp; &nbsp; 华南理工大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">深圳</span><span class="tdm">
+								<span class="tdi dark">10.14 &nbsp; &nbsp; 深圳大学</span>
+							</span>
+						</div>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							华中
+						</div>
+						<div class="tdl">
+							<span class="td">长沙</span><span class="tdm">
+								<span class="tdi">09.22 &nbsp; &nbsp; 中南大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">武汉</span><span class="tdm">
+								<span class="tdi dark">09.23 &nbsp; &nbsp; 武汉大学</span>
+								<span class="tdi">09.24 &nbsp; &nbsp; 华中科技大学</span>
+							</span>
+						</div>
+					</div>
+					<div class="tb zoom">
+						<div class="td">
+							华东
+						</div>
+						<div class="tdl">
+							<span class="td">南京</span><span class="tdm">
+								<span class="tdi dark">09.25 &nbsp; &nbsp; 东南大学</span>
+								<span class="tdi dark">09.26 &nbsp; &nbsp; 南京大学</span>
+							</span>
+							<span class="td">杭州</span><span class="tdm">
+								<span class="tdi dark">10.14 &nbsp; &nbsp; 浙江大学</span>
+							</span>
+							<div class="borderBottom"></div>
+							<span class="td">上海</span><span class="tdm">
+								<span class="tdi">10.15 &nbsp; &nbsp; 上海交通大学</span>
+								<span class="tdi dark">10.15 &nbsp; &nbsp; 复旦大学</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="switcher" id="switcher">
+			<i class="on"></i>&nbsp; <i></i>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec zoom">
+			<div class="title ico">加入我们 3大渠道帮您快速触达校招第一线</div>
+			<div class="way">
+				<i class="ico">1</i>
+				官方网站 http://www.jd-campus.com/jingdong/index <br />浏览招聘行程，了解职位信息，申请感兴趣的职位~
+			</div>
+			<div class="way">
+				<i class="ico">2</i>
+				通过官方微信&ldquo;拍拍网招聘&rdquo;与拍拍近距离接触，第一时间获取最新校招信息
+			</div>
+			<div class="way">
+				<i class="ico">3</i>
+				 校园宣讲会：北京、成都、西安、武汉、南京、上海、哈尔滨等十几个城市与京东人面对面，全面了解京东拍拍校招计划。
+			</div>
+		</div>
+	</div>
+	<div class="page hidechild">
+		<div class="sec">
+			<div class="bg milkup"></div>
+			<div class="milk milkup2">
+				<img src="images/last_milk.png" width="100%" border="0" />
+			</div>
+			<div class="email ico"></div>
+			<div class="backhome" id="home">
+				<i class="breathing homebreathing"></i>
+				<i class="home ico"></i>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="http://static.paipaiimg.com/wx/js/halo.14.03.js"></script>
+<!-- <script type="text/javascript" src="script/parallax.js"></script> -->
+<script type="text/javascript">
+var animation=document.getElementById('animation');
+halo.use(function(m){
+	//动画专用
+	var css='',webkit=m.webkit;
+	css+='@'+webkit+'keyframes down{0%{'+webkit+'transform:translate(0,-400px);}65%{'+webkit+'transform:translate(0,70px);}100%{'+webkit+'transform:translate(0,0);}}';
+	//css+='@'+webkit+'keyframes todown{0%{'+webkit+'transform:translate(0,0);}25%{'+webkit+'transform:translate(0,10px);}50%{'+webkit+'transform:translate(0,0);}100%{'+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes todown{0%{'+webkit+'transform:translate(0,0);}50%{'+webkit+'transform:translate(0,10px);}100%{'+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes textup{0%{opacity:0; '+webkit+'transform:translate(0,50px);}100%{opacity:1; '+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes fadein{0%{opacity:0;}100%{opacity:1;}}';
+	css+='@'+webkit+'keyframes logoup{0%{'+webkit+'transform:translate(0,62px) skew(0deg,0deg);}30%{'+webkit+'transform:translate(0,0) skew(0deg,80deg);}45%{'+webkit+'transform:translate(0,0) skew(0deg,-30deg);}60%{'+webkit+'transform:translate(0,0) skew(0deg,10deg);}70%{'+webkit+'transform:translate(0,0) skew(0deg,-5deg);}80%{'+webkit+'transform:translate(0,0) skew(0deg,0deg);}100%{'+webkit+'transform:translate(0,0) skew(0deg,0deg);}}';
+	css+='@'+webkit+'keyframes start{0%{opacity:0; '+webkit+'transform:translate(0,10px);}50%{opacity:1; '+webkit+'transform:translate(0,-5px);}100%{opacity:0; '+webkit+'transform:translate(0,-15px);}}';
+	css+='@'+webkit+'keyframes girlup{0%{'+webkit+'transform:rotate3d(0,0,1,-90deg);}70%{'+webkit+'transform:rotate3d(0,0,1,10deg);}85%{'+webkit+'transform:rotate3d(0,0,1,-5deg);}100%{'+webkit+'transform:rotate3d(0,0,1,0deg);}}';
+	css+='@'+webkit+'keyframes milkup{0%{'+webkit+'transform:rotate(90deg);}70%{'+webkit+'transform:rotate(-10deg);}85%{'+webkit+'transform:rotate(5deg);}100%{'+webkit+'transform:rotate(0);}}';
+	css+='@'+webkit+'keyframes milkup2{0%{'+webkit+'transform:translate(0,100%); opacity:0;}70%{'+webkit+'transform:translate(0,-30px); opacity:.85;}85%{'+webkit+'transform:translate(0,10px); opacity:1;}100%{'+webkit+'transform:translate(0,0); opacity:1;}}';
+	css+='@'+webkit+'keyframes homebreathing{0%{'+webkit+'transform:scale(1,1); opacity:.3;}80%{'+webkit+'transform:scale(1.8,1.8); opacity:0}100%{'+webkit+'transform:scale(1.8,1.8); opacity:0}}';
+	css+='@'+webkit+'keyframes skee{0%{'+webkit+'transform:translate(-120px,-300px) scale(.2,.2); opacity:0;}50%{'+webkit+'transform:translate(50px,-200px) scale(.5,.5); opacity:1;}65%{'+webkit+'transform:translate(-80px,-100px) scale(1,1); opacity:1;}90%{'+webkit+'transform:translate(10px,10px) scale(1,1); opacity:1;}100%{'+webkit+'transform:translate(0,0) scale(1,1); opacity:1;}}';
+	css+='@'+webkit+'keyframes skiing{0%{'+webkit+'transform:translate(0,0);}5%{'+webkit+'transform:translate(10px,-10px);}10%{'+webkit+'transform:translate(0,0);}15%{'+webkit+'transform:translate(10px,-10px);}20%{'+webkit+'transform:translate(0,0);}25%{'+webkit+'transform:translate(10px,-10px);}30%{'+webkit+'transform:translate(0,0);}35%{'+webkit+'transform:translate(-10px,-10px);}40%{'+webkit+'transform:translate(0,0);}45%{'+webkit+'transform:translate(10px,-10px);}50%{'+webkit+'transform:translate(0,0);}55%{'+webkit+'transform:translate(0px,-10px);}60%{'+webkit+'transform:translate(0,0);}65%{'+webkit+'transform:translate(0px,-10px);}70%{'+webkit+'transform:translate(0,0);}72%{'+webkit+'transform:translate(0px,-50px);}74%{'+webkit+'transform:translate(0,0);}76%{'+webkit+'transform:translate(10px,-20px);}80%{'+webkit+'transform:translate(0,0);}85%{'+webkit+'transform:translate(0,-10px);}90%{'+webkit+'transform:translate(0,0);}95%{'+webkit+'transform:translate(10px,-10px);}100%{'+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes toright{0%{opacity:.5; '+webkit+'transform:translate(-300px,0);}70%{opacity:1; '+webkit+'transform:translate(30px,0);}85%{opacity:1; '+webkit+'transform:translate(-10px,0);}100%{opacity:1; '+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes toleft{0%{opacity:.5; '+webkit+'transform:translate(300px,0);}70%{opacity:1; '+webkit+'transform:translate(-30px,0);}85%{opacity:1; '+webkit+'transform:translate(10px,0);}100%{opacity:1; '+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes torighttop{0%{opacity:.5; '+webkit+'transform:translate(300px,300px);}70%{opacity:1; '+webkit+'transform:translate(-30px,-30px);}85%{opacity:1; '+webkit+'transform:translate(10px,10px);}100%{opacity:1; '+webkit+'transform:translate(0,0);}}';
+	css+='@'+webkit+'keyframes keepl{0%{'+webkit+'transform:translate(4px,0);}50%{'+webkit+'transform:translate(-4px,0);}100%{'+webkit+'transform:translate(4px,0);}}';
+	css+='@'+webkit+'keyframes keepr{0%{'+webkit+'transform:translate(-4px,0);}50%{'+webkit+'transform:translate(4px,0);}100%{'+webkit+'transform:translate(-4px,0);}}';
+	css+='@'+webkit+'keyframes keeprt{0%{'+webkit+'transform:translate(4px,4px);}50%{'+webkit+'transform:translate(-4px,-4px);}100%{'+webkit+'transform:translate(4px,4px);}}';
+	css+='@'+webkit+'keyframes crying{0%{'+webkit+'transform:rotate(5deg);}50%{'+webkit+'transform:rotate(-5deg);}100%{'+webkit+'transform:rotate(5deg);}}';
+	css+='@'+webkit+'keyframes jump{0%{'+webkit+'transform:translate3d(100px,400px,0);}100%{'+webkit+'transform:translate3d(0,0,0)}}';
+	css+='@'+webkit+'keyframes fly{0%{'+webkit+'transform:translate(0,-320px) scale(.2,.2);}75%{'+webkit+'transform:translate(150px,-100px) scale(.8,.8);}90%{'+webkit+'transform:translate(-20px,20px) scale(1,1);}100%{'+webkit+'transform:translate(0,0) scale(1,1);}}';
+	css+='@'+webkit+'keyframes hover{0%{'+webkit+'transform:translate(0,5px)}25%{'+webkit+'transform:translate(5px,0)}50%{'+webkit+'transform:translate(0,5px)}75%{'+webkit+'transform:translate(-5px,1px)}100%{'+webkit+'transform:translate(0,5px)}}';
+	//css+='@'+webkit+'keyframes moveround{0%{'+webkit+'transform:rotate(0deg) translate(0,0); z-index:0;}10%{'+webkit+'transform:rotate(40deg) translate(180px,-160px); z-index:0;}40%{'+webkit+'transform:rotate(40deg) translate(180px,-160px); z-index:1;}50%{'+webkit+'transform:rotate(40deg) translate(0,0); z-index:1;}100%{'+webkit+'transform:rotate(-40deg) translate(0,0); z-index:0;}}';
+	css+='@'+webkit+'keyframes moveround{0%{'+webkit+'transform:rotate(0deg) translate(0,0); z-index:0;}49.8%{'+webkit+'transform:rotate(40deg) translate(180px,-160px); z-index:0;}49.9%{'+webkit+'transform:rotate(40deg) translate(180px,-160px); z-index:1;}99%{'+webkit+'transform:rotate(40deg) translate(0,0); z-index:1;}100%{'+webkit+'transform:rotate(-40deg) translate(0,0); z-index:0;}}';
+	css+='@'+webkit+'keyframes moveround2{0%{'+webkit+'transform:rotate(0deg) translate(0,0); z-index:1;}49.8%{'+webkit+'transform:rotate(40deg) translate(-160px,140px); z-index:1;}49.9%{'+webkit+'transform:rotate(40deg) translate(-160px,140px); z-index:0;}99%{'+webkit+'transform:rotate(40deg) translate(0,0); z-index:0;}100%{'+webkit+'transform:rotate(-40deg) translate(0,0); z-index:1;}}';
+	css+='@'+webkit+'keyframes moveround3{0%{'+webkit+'transform:rotate(0deg) translate(0,0); z-index:0;}49.8%{'+webkit+'transform:rotate(40deg) translate(100px,-180px); z-index:0;}49.9%{'+webkit+'transform:rotate(40deg) translate(100px,-180px); z-index:1;}99%{'+webkit+'transform:rotate(40deg) translate(0,0); z-index:1;}100%{'+webkit+'transform:rotate(-40deg) translate(0,0); z-index:0;}}';
+	css+='@'+webkit+'keyframes eyeshining{0%{opacity:0;}30%{opacity:1}40%{opacity:1}45%{opacity:0}50%{opacity:1}55%{opacity:0;}60%{opacity:1}65%{opacity:0;}100%{opacity:1}}';
+	css+='@'+webkit+'keyframes looking{0%{'+webkit+'transform:rotate(0deg);}50%{'+webkit+'transform:rotate(12deg);}100%{'+webkit+'transform:rotate(0deg);}}';
+
+
+	css+='.down{'+webkit+'animation:down .4s ease-in-out .3s both;}';
+	css+='.down2{'+webkit+'animation:down .4s ease-in-out .35s both;}';
+	css+='.down3{'+webkit+'animation:down .4s ease-in-out .4s both;}';
+	css+='.down4{'+webkit+'animation:down .4s ease-in-out .45s both;}';
+	css+='.down5{'+webkit+'animation:down .4s ease-in-out .55s both;}';
+	css+='.down5{'+webkit+'animation:down .4s ease-in-out .6s both;}';
+	css+='.todown{'+webkit+'animation:todown 1.3s ease-in-out infinite;}';
+	css+='.textup1s{'+webkit+'animation:textup .3s ease-in-out 1s both;}';
+	css+='.fadein_6s{'+webkit+'animation:fadein .8s linear .6s both;}';
+	css+='.fadein1s{'+webkit+'animation:fadein .8s linear 1s both;}';
+	css+='.fadein1_2s{'+webkit+'animation:fadein .8s linear 1.2s both;}';
+	css+='.fadein1_4s{'+webkit+'animation:fadein .8s linear 1.4s both;}';
+	css+='.fadein1_6s{'+webkit+'animation:fadein .8s linear 1.6s both;}';
+	css+='.fadein2s{'+webkit+'animation:fadein .8s linear 2s both;}';
+	css+='.logoup{'+webkit+'animation:logoup 1s linear both; '+webkit+'transform-origin:left top;}';
+	css+='.start{'+webkit+'animation:start 1.2s ease-in-out infinite;}';
+	css+='.milkup{'+webkit+'animation:milkup .3s linear .3s both; '+webkit+'transform-origin:left bottom;}';
+	css+='.girlup{'+webkit+'animation:girlup .3s linear .6s both; '+webkit+'transform-origin:right bottom;}';
+	css+='.milkup2{'+webkit+'animation:milkup2 .3s linear .8s both;}';
+	css+='.homebreathing{'+webkit+'animation:homebreathing 1s linear 1s infinite;}';
+	css+='.skee{'+webkit+'animation:skee .8s linear .6s both;}';
+	css+='.doSkiing{'+webkit+'animation:skiing 30s linear 1.3s infinite;}';
+	css+='.toright{'+webkit+'animation:toright .3s ease-in-out 1s both;}';
+	css+='.toleft{'+webkit+'animation:toleft .3s ease-in-out 1s both;}';
+	css+='.torighttop{'+webkit+'animation:torighttop .3s ease-in-out 1s both;}';
+	css+='.keepl{'+webkit+'animation:keepl 1.4s linear 1.1s infinite;}';
+	css+='.keepr{'+webkit+'animation:keepr 1.4s linear 1.2s infinite;}';
+	css+='.keeprt{'+webkit+'animation:keeprt 1.4s linear 1.3s infinite;}';
+	css+='.jump{'+webkit+'animation:jump .3s ease-in-out .6s both;}';
+	css+='.crying{'+webkit+'animation:crying 2.4s linear infinite .9s; '+webkit+'transform-origin:60% 70%;}';
+	//css+='.looking{'+webkit+'animation:looking 3s linear .9s infinite; '+webkit+'transform-origin:45% 90%;}';
+	css+='.fly{'+webkit+'animation:fly .8s linear .3s both;}';
+	css+='.hover{'+webkit+'animation:hover 4s linear infinite;}';
+	css+='.moveround1{'+webkit+'animation:moveround 8s linear 1.1s infinite;}';
+	css+='.moveround2{'+webkit+'animation:moveround 6s linear 1.1s infinite;}';
+	css+='.moveround3{'+webkit+'animation:moveround2 9s linear 1.1s infinite;}';
+	css+='.moveround4{'+webkit+'animation:moveround3 7s linear 1.1s infinite;}';
+	css+='.eyeshining{'+webkit+'animation:eyeshining 1.5s linear 1.2s both;}';
+	css+='.looking{'+webkit+'animation:looking 1.5s linear 2.7s infinite; '+webkit+'transform-origin:30px 0px;}'
+	animation.innerHTML=css;
+});
+</script>
+<script type="text/javascript">
+halo.use('uievent','warn','pagedrag','pageinvite','loadimg','weixinshare','qqshare',function(m){
+	m.warn.set('#dddddd');
+	var wrap=document.getElementById('wrap'),pages=document.getElementsByClassName('page'),triangel=document.getElementById("triangel");
+	//var subpager=[];//横向滚动
+	var pager=m.pageinvite.bind(wrap),cur=0;
+	if(navigator.userAgent.indexOf('MI 3')>=0){//解决长动画hack
+		pager.need_scale=true;
+	}else{
+		pager.need_scale=false;
+	};
+	pager.infinite=false;
+	//pager.move(4);
+	pager.page_change=function(c,n){
+		cur=n;
+		if(0==c){
+			//翻出页为0 - 恢复初始状态
+			triangel.className='thrangel down5';
+		}
+		if(0==n){
+			//翻入页为0 - 加入向下指动状态
+			setTimeout(function(){
+				0==cur&&(triangel.className='thrangel todown');
+			},2000);
+		}
+		//显示分页
+		m.removeClass(pages[n],'hidechild');m.addClass(pages[c],'hidechild');
+	}
+	m.loadimg(['images/1.jpg','images/2.jpg','images/3.jpg','images/4.jpg','images/5.jpg','images/6.jpg','images/title.png','images/milk_1.png?v=201409141603','images/milk_2.png','images/milk_3.png','images/sec_1.png','images/sec_2.png','images/sec_3.png','images/sec_4.png','images/sec_5.png','images/sec_6.png','images/3_6.png','images/7_9.png'],'#dddddd',function(){
+		wrap.style.display='block';
+		setTimeout(function(){
+			0==cur&&(triangel.className='thrangel todown');
+		},2000);
+	});
+	//给四个职位添加横向滚动，以便可以查看详情
+	var init_job_detail=function(sec){
+		var pager=m.pagedrag.bind(sec,'X',true),tabs=sec.parentNode.getElementsByClassName('moz'),cur=0,need_hidden=false,subpage=sec.getElementsByClassName('subpage');
+		//subpager.push(pager);
+		if(tabs.length<=0)return ;
+		tabs=tabs[0];
+		var tab=tabs.getElementsByTagName('div');
+		var add_touch_event=function(dom,i){
+			m.on(dom,'touchstart',function(){
+				m.addClass(this,'on');
+			});
+			m.on(dom,'flick',function(e){
+				e.stopPropagation(),e.preventDefault();
+				pager.move(i,true);//不带滑动状态
+			});
+		};
+		for(var i=0,len=tab.length;i<len;++i){
+			add_touch_event(tab[i],i);
+		};
+		pager.page_change=function(c,n){
+			//subpage[c].style.display='none',subpage[n].style.display='block';
+			m.addClass(subpage[c],'hidechild'),m.removeClass(subpage[n],'hidechild');
+			m.removeClass(tab[c],'on'),m.addClass(tab[n],'on'),cur=n;
+			if(need_hidden)return ;
+			if(n>0){
+				tabs.parentNode.style.display='block';
+			}else{
+				tabs.parentNode.style.display='none';
+			}
+		};
+		//双击时隐藏/显示tabs切换
+		// m.on(sec,'dblclick',function(){
+		// 	if(0==cur)return ;
+		// 	if('block'==tabs.parentNode.style.display)tabs.parentNode.style.display='none',need_hidden=true;
+		// 	else tabs.parentNode.style.display='block',need_hidden=false;
+		// });
+		// setTimeout(function(){
+		// 	//视差
+		// 	try{
+		// 		var parallax=new Parallax(pages[0]);
+		// 	}catch(e){};
+		// },2000);
+		//向左移动
+		var slid2right=sec.getElementsByClassName('slid2right')[0],clk2right=sec.getElementsByClassName('clk2right')[0];
+		var move2right=function(e){
+			e.stopPropagation(),e.preventDefault();
+			pager.move(1);
+		};
+		m.on(slid2right,'flick',move2right),m.on(clk2right,'flick',move2right);
+	};
+	for(var i=2;i<6;++i){
+		var sec=pages[i].getElementsByClassName('sec')[0];
+		init_job_detail(sec);
+	};
+	//给宣讲流程加左右切换
+	var dataTables=m.pagedrag.bind(document.getElementById('tables'),'X',true),switcher=document.getElementById('switcher').getElementsByTagName('i');
+	dataTables.page_change=function(c,n){
+		switcher[c].className='',switcher[n].className='on';
+	}
+	m.on(document.getElementById('home'),'flick',function(){
+		pager.move(0);
+	});
+	//微信分享
+	var share_img='http://www.paipai.com/event/201409/campus/images/share.jpg',share_url=window.location.href,title="拍拍2015校园招聘邀请函",desc="Let‘s Change the World Together！ -  拍拍2015校园招聘启航";
+	m.weixinshare(share_url,share_img,title,desc);
+	//QQ分享
+	m.qqshare(share_url,share_img,title,desc);
+});
+</script>
+</body>
+</html><!--[if !IE]>|xGv00|c545f3148097c4fd6ef9ff39167cdabd<![endif]-->
