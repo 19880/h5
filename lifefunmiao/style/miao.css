@@ -1,0 +1,330 @@
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    background-color: black;
+    padding: 0px 14px 0px;
+    margin: 4px;
+    text-align: center;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0;
+    color: white;
+}
+
+h2 {
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0;
+    color: #666666;
+}
+
+#huise h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+    color: black;
+}
+
+#huise h2 {
+    font-size: 12px;
+    text-align: center;
+    margin: 2px 0 0px;
+    color: black;
+    font-weight: normal;
+}
+
+#huise h3 {
+    font-size: 12px;
+    text-align: center;
+    margin: 4px 0 10px;
+    color: black;
+    font-weight: normal;
+}
+
+#huise h4 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    color: white;
+    font-weight: normal;
+}
+
+#huise h5 {
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    color: black;
+    font-weight: normal;
+}
+
+canvas {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+#messege {
+    text-align: center;
+    background: black;
+    color: #fff;
+    /*text-shadow:0px 0px #1b6116; */
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px 10px;
+}
+
+#messege .messege_content {
+    padding: 10px 10px;
+}
+
+.tips {
+    height: 45px;
+    padding: 8px 0px 4px;
+    margin: 0px;
+    text-align: center;
+}
+
+#tips_left {
+    position: relative;
+    /* top: 4px;*/
+    left: 10px;
+    float: left;
+    text-align: center;
+}
+
+#tips_right {
+    position: relative;
+    float: right;
+    right: 10px;
+    padding: 0 10px 0;
+}
+
+.button_wrap {
+    margin: 1px;
+}
+
+.button {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    padding: 0 8px 0;
+    border: 1px solid white;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.button2 {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    padding: 0 8% 0;
+    margin: auto 15px;
+    border: 1px solid white;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#colors_sketch {
+    border: 1px solid white;
+}
+
+#bichu, #tijiao, #chakan {
+    width: 120px;
+}
+
+#tijiao {
+    /* background-color: #962424;*/
+}
+
+.tips p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: white;
+}
+
+.tools {
+    text-align: center;
+    margin: 4px -8px 8px;
+    height: 37px;
+}
+
+.circle {
+    display: block;
+    width: 25px;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+
+#circle1 {
+    position: relative;
+    top: 14px;
+    right: -10px;
+    width: 4px;
+    height: 4px;
+    background: black;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+
+#circle2 {
+    position: relative;
+    top: 13px;
+    right: -10px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+
+#circle3 {
+    position: relative;
+    top: 11px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    background: black;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid white;
+}
+
+.bottom-fixed {
+    Z-INDEX: 10000;
+    POSITION: fixed;
+    TEXT-ALIGN: center;
+    WIDTH: 100%;
+    BOTTOM: 1px;
+    HEIGHT: 35px
+}
+
+.bottom-option {
+    position: relative;
+    float: left;
+    width: 48%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #513646;
+    opacity: 0.5;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    box-shadow: 1px 1px #000;
+    -moz-box-shadow: 1px 1px #000;
+    -webkit-box-shadow: 1px 1px #000;
+}
+
+.bottom-option a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#huise {
+    /*  visibility: hidden; */
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+}
+
+#card {
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 65%;
+    text-align: center;
+    background-color: white;
+    z-index: 4;
+    overflow: hidden;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+#menu-2 {
+    position: fixed;
+    top: 83%;
+    left: 10%;
+    width: 80%;
+    /* height:30px;*/
+    text-align: center;
+    /* background-color:black; */
+    z-index: 5;
+    overflow: hidden;
+}
+
+#close {
+    right: 0px;
+}
+
+.tri {
+    display: block;
+    width: 30px;
+    height: 15px;
+    margin: auto;
+    text-align: center;
+    background-image: url(http://miaoa.life-fun.cn/image/tri-30.png);
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+}
+
+#conment-box {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    background-color: #eaeaea;
+    z-index: 4;
+    overflow: hidden;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 10px 0 10px 0;
+}
+
+#conment-box p {
+    position: relative;
+    color: black;
+    margin: 6px 10px;
+    font-size: 11px;
+    text-align: left;
+}

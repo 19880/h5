@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/miao.css" />
+    <script src="/script/jquery-latest.js"></script>
+    <script type="text/javascript" src="/script/tinybox.js"></script>
+    <script type="text/javascript" src="/script/iscroll.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F026dc3ba91f887841813c1c2ddf7b7b3' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+        <script type="text/javascript">
+        //微信配置部分
+        wx.config({
+            debug: false,
+            appId: 'wx3e7b53d475fc18c4',
+            timestamp: 1422338524,
+            nonceStr: '0KWTP9fp9LiHgxKR',
+            signature: 'a9cb5406a9933c3037f1a8883bef3f24de6e222f',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage'
+            ]
+        });
+
+        page_no=1;//页面编号
+        gfile=0;//初始数据
+        DataReload = false;//数据重载指令
+
+        //全局变量方便调用
+        wxSharedData = {
+            "appId": "wx3e7b53d475fc18c4",
+            "imgUrl" : "http://miaoa.life-fun.cn/miao_logo.jpg",
+            "link" : 'http://lifefunmiao.sinaapp.com/SHppa8r',
+            "desc" : '你的创造\n贡献无穷能量！\nLIFE-FUN',
+            "title" : "这里好多画喵大神！快来一起完成<十万喵星人计划>！"
+        };
+
+        // 关掉浮窗时取消分享状态
+        function clearpicnum(){
+            wxSharedData.imgUrl = "http://miaoa.life-fun.cn/miao_logo.jpg";
+            wxSharedData.link = "http://lifefunmiao.sinaapp.com/jtWJPC1";
+            wxSharedData.title = '这里好多画喵大神！快来一起完成<十万喵星人计划>！';
+            DataReload = false;//关闭数据重载
+            gfile=0;
+            //官方分享接口
+            wx.ready(function(){
+                wx.onMenuShareAppMessage({
+                    title: DataReload?new_title:wxSharedData.title,
+                    desc: wxSharedData.desc,
+                    link: DataReload?new_link:wxSharedData.link,
+                    imgUrl: DataReload?new_imgUrl:wxSharedData.imgUrl,
+                    trigger: function (res) {
+                        //alert('用户点击发送给朋友');
+                    },
+                    success: function (res) {
+                        //alert('已分享');
+                        $.ajax({
+                            type: "post",
+                            url: "function/sharedata.php",
+                            data: {
+                                picnum: getCookie("picnum")>0?getCookie("picnum"):-1,
+                                mode:2,
+                                IndexOrPiclist:page_no,
+                                targetpic:gfile
+                            }
+                        });
+                        DataReload = false;//关闭数据重载
+                    },
+                    cancel: function (res) {
+                        //alert('已取消');
+                    },
+                    fail: function (res) {
+                        //alert(JSON.stringify(res));
+                    }
+                });
+                wx.onMenuShareTimeline({
+                    title: DataReload?new_title:wxSharedData.title,
+                    desc: wxSharedData.desc,
+                    link: DataReload?new_link:wxSharedData.link,
+                    imgUrl: DataReload?new_imgUrl:wxSharedData.imgUrl,
+                    trigger: function (res) {
+                        //alert('用户点击分享到朋友圈');
+                    },
+                    success: function (res) {
+                        //alert('已分享');
+                        $.ajax({
+                            type: "post",
+                            url: "function/sharedata.php",
+                            data: {
+                                picnum: getCookie("picnum")>0?getCookie("picnum"):-1,
+                                mode:1,
+                                IndexOrPiclist:page_no,
+                                targetpic:gfile
+                            }
+                        });
+                        DataReload = false;//关闭数据重载
+                    },
+                    cancel: function (res) {
+                        //alert('已取消');
+                    },
+                    fail: function (res) {
+                        //alert(JSON.stringify(res));
+                    }
+                });
+            });
+        }
+
+        //点赞
+            </script>
+    <title>十万喵星人计划！</title>
+</head>
+<body>
+<div class="tips">
+    <div id="tips_left">
+        <a href="http://www.life-fun.cn/event.html"><h1><strong>LIFE-FUN.CN</strong></h1></a>
+        <h1>现已收录了<strong>299531</strong>只喵星人</h1>    </div>
+    <a  href="piclist.php" class="button_wrap" ><div id="tips_right" class="button">围观作品</div></a>
+</div>
+<div id="canvas"></div>
+<div class="tools" >
+    <a href="#colors_sketch" data-clear='true' style=" width: 50px;" class="button_wrap" id="chongxinhua"><div class="button">重新画</div></a>
+    <a id="selectbrush" href='#colors_sketch' data-size='2' onclick="selectbrush()" class="button_wrap" >
+        <div class="button" id="bichu" >笔触
+            <div class="circle"><div id="circle3"></div></div>
+            <div class="circle"><div id="circle2"></div></div>
+            <div class="circle"><div id="circle1"></div></div>
+        </div>
+    </a>
+    <a href="#colors_sketch" data-cancel='true' style=" width: 60px;" class="button_wrap" id="shangyibu"><div class="button">上一步</div></a>
+</div>
+<div class="tools" style="margin:0 0 1px;">
+    <a href="http://mp.weixin.qq.com/s?__biz=MzA4NTA3NTMzMA==&mid=200883099&idx=1&sn=1dbebaf4a240378c097e7a78696d5022%23rd"><div id="chakan" class="button">绝密计划书</div></a>
+    <a onclick="confirm()" class="button_wrap" ><div id="tijiao" class="button">上传喵星人</div></a>
+</div>
+
+<h2>如遇画布消失或未满屏，可尝试刷新本页面</h2>
+<script type="text/javascript">
+    var sl=2;
+    function selectbrush(){
+        if(sl==1)
+        {
+            document.getElementById("selectbrush").setAttribute("data-size","5");
+            document.getElementById("circle1").style.background="black";
+            document.getElementById("circle2").style.background="white";
+            document.getElementById("circle3").style.background="black";
+            sl++;
+        }
+        else if(sl==2)
+        {
+            document.getElementById("selectbrush").setAttribute("data-size","10");
+            document.getElementById("circle1").style.background="black";
+            document.getElementById("circle2").style.background="black";
+            document.getElementById("circle3").style.background="white";
+            sl++;
+        }
+        else if(sl==3)
+        {
+            document.getElementById("selectbrush").setAttribute("data-size","2");
+            document.getElementById("circle1").style.background="white";
+            document.getElementById("circle2").style.background="black";
+            document.getElementById("circle3").style.background="black";
+            sl=1;
+        }
+        // alert("到底是为啥呢？");
+    }
+</script>
+<script type="text/javascript" src="/script/main.js"></script>
+<script type="text/javascript">
+    //画板部分
+    function ready()
+    {
+        // 插入画布
+        // if(window.innerHeight==0)window.location.reload();
+        //加载画布js，初始化
+        $.getScript("http://miaoa.life-fun.cn/script/sketch.js", function(){
+            $(function() {
+                // var insertText = "<canvas id='colors_sketch' width='"+(window.innerWidth-38)+"px' height='"+(window.innerHeight-170)+"px'></canvas>";
+                //document.getElementById("canvas").innerHTML = insertText;
+                $("#canvas").html("<canvas id='colors_sketch' width='"+(window.innerWidth-38)+"px' height='"+(window.innerHeight-170)+"px'></canvas>");
+                $('#colors_sketch').sketch();
+            });
+        });
+        myScroll = new IScroll('#card', {
+            mouseWheel: true,
+            scrollbars: false
+        });
+        // $("#huise").css("display","hided");
+    }
+    window.onload=ready;
+
+    //官方分享接口
+    wx.ready(function(){
+        wx.onMenuShareAppMessage({
+            title: DataReload?new_title:wxSharedData.title,
+            desc: wxSharedData.desc,
+            link: DataReload?new_link:wxSharedData.link,
+            imgUrl: DataReload?new_imgUrl:wxSharedData.imgUrl,
+            trigger: function (res) {
+                //alert('用户点击发送给朋友');
+            },
+            success: function (res) {
+                //alert('已分享');
+                $.ajax({
+                    type: "post",
+                    url: "function/sharedata.php",
+                    data: {
+                        picnum: getCookie("picnum")>0?getCookie("picnum"):-1,
+                        mode:2,
+                        IndexOrPiclist:page_no,
+                        targetpic:gfile
+                    }
+                });
+                DataReload = false;//关闭数据重载
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+        wx.onMenuShareTimeline({
+            title: DataReload?new_title:wxSharedData.title,
+            desc: wxSharedData.desc,
+            link: DataReload?new_link:wxSharedData.link,
+            imgUrl: DataReload?new_imgUrl:wxSharedData.imgUrl,
+            trigger: function (res) {
+                //alert('用户点击分享到朋友圈');
+            },
+            success: function (res) {
+                //alert('已分享');
+                $.ajax({
+                    type: "post",
+                    url: "function/sharedata.php",
+                    data: {
+                        picnum: getCookie("picnum")>0?getCookie("picnum"):-1,
+                        mode:1,
+                        IndexOrPiclist:page_no,
+                        targetpic:gfile
+                    }
+                });
+                DataReload = false;//关闭数据重载
+            },
+            cancel: function (res) {
+                //alert('已取消');
+            },
+            fail: function (res) {
+                //alert(JSON.stringify(res));
+            }
+        });
+    });
+</script>
+</body>
+</html>
