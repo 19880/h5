@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=no;" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="red" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/jquery.transit.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/Cmn.js"></script>
+    <script src="js/CmnAjax.js"></script>
+    <script src="js/animate/AnimateMan.js"></script>
+    <script src="js/animate/ScenesSwitch.js"></script>
+    <script src="js/animate/Scenes.js"></script>
+    <script src="js/animate/AnimateFrame.js"></script>
+    <script src="js/animate/BasAnimate.js"></script>
+    <script src="js/CmnFuncExd.js"></script>
+    <script src="js/WechatShare.js"></script>
+    <script src="js/MyJs.js"></script>
+   <title>一条NB的广告</title>
+</head>
+<body>
+
+    <!--加载动画-->
+    <div id="preloader" class="jscPreloader" style="display:block;">
+        <div class="spinner-wrap">
+            <div class="spinner">
+                <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+        </div>
+        <!--<p>50%</p>-->
+    </div>
+
+
+<div class="Wrap cmn-AnimteFrameContainer">
+    <div class="Main cmn-ScenesContainer">
+       
+        <!--第一场景-->
+        <div class="cmn-Scenes PublicScenes Page1" id="Page1">
+            <div class="Inner">
+                <img class="Text Text1 cmn-animate" cfg="{action:[{styles:{'left':'148px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text1.png" />
+                <img class="Text Text2 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:200},{styles:{'left':'204px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text2.png" />
+                <img class="Text TextBottom Text3 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:400},{styles:{'left':'148px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text3.png" />
+                <img class="Text TextBottom Text4 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:600},{styles:{'left':'186px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text4.png" />
+                <img class="Text TextBottom Text5 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:800},{styles:{'left':'222px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text5.png" />
+                <img class="Text TextBottom Text6 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:1000},{styles:{'left':'276px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text6.png" />
+                <img class="Text TextBottom Text7 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:1200},{styles:{'left':'336px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text7.png" />
+                <img class="Text TextBottom Text8 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:1400},{styles:{'left':'390px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text8.png" />
+                <img class="Text TextBottom Text9 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:1600},{styles:{'left':'401px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text9.png" />
+                <img class="Text TextBottom Text10 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:1800},{styles:{'left':'410px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text10.png" />
+                <img class="Text TextBottom Text11 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:2000},{styles:{'left':'420px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text11.png" />
+                <img class="Text TextBottom Text12 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:2200},{styles:{'left':'430px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text12.png" />
+                <img class="Text TextBottom Text13 cmn-animate" cfg="{action:[{styles:{'left':'-800'},speed:2400},{styles:{'left':'440px','top':'466px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page1/Text13.png" />
+
+                <div class="Shoes ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page1/Shoes.png" />
+                </div>
+
+                <!--手指-->
+                <div class="FingerPic">
+                    <img src="images/SaveBanPic.png" lazypath="images/FingerPic.png" />
+                    <img class="FingerPic_2" src="images/SaveBanPic.png" lazypath="images/FingerPic_2.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第二场景-->
+        <div class="cmn-Scenes PublicScenes Page2" id="Page2">
+            <div class="Inner">
+                <div class="Position Text1 cmn-animate">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/Text1.png" />
+                </div>
+
+                <div class=" LeftTx">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/LeftTx.png" />
+                </div>
+                <div class=" RightTx">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/RightTx.png" />
+                </div>
+
+                <div class="Position Text2 " cfg="{action:[{styles:{'opacity':'0'},speed:1000},{styles:{'opacity':'1','left':'250px'},speed:800}],loop:0,index:1}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/Text2.png" />
+                </div>
+                <div class="Position Text3 " cfg="{action:[{styles:{'opacity':'0'},speed:1000},{styles:{'opacity':'1','left':'153px'},speed:800}],loop:0,index:1}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/Text3.png" />
+                </div>
+                <div class="Position Text4 " cfg="{action:[{styles:{'opacity':'0'},speed:1000},{styles:{'opacity':'1','left':'131px'},speed:800}],loop:0,index:1}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page2/Text4.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第三场景-->
+        <div class="cmn-Scenes PublicScenes Page3" id="Page3">
+            <div class="Inner">
+
+                <div class="Position Text1 " >
+                    <img src="images/SaveBanPic.png" lazypath="images/Page3/Text1.png" />
+                </div>
+                <div class="Position Text2 ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page3/Text2.png" />
+                </div>
+                <div class="Position RebWu">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page3/RebWu.png" />
+                </div>
+                <div class="Position S">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page3/S.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第四场景-->
+        <div class="cmn-Scenes PublicScenes Page4" id="Page4">
+            <div class="Inner">
+                <div class="Position Text3">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page4/Text3.png" />
+                </div>
+
+                <div class="Position Text4">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page4/Text4.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第五场景-->
+        <div class="cmn-Scenes PublicScenes Page5" id="Page5">
+            <div class="Inner">
+                <!--<div class=" LeftArrow"><img src="images/SaveBanPic.png" lazypath="images/Page5/LeftArrow.png" /></div>
+                <div class=" RightArrow"><img src="images/SaveBanPic.png" lazypath="images/Page5/RightArrow.png" /></div>--> 
+                <div class="Position Text1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page5/Text1.png" />
+                </div>
+                <div class="Position Xie">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page5/Xie.png" />
+                </div>
+
+                <div class="Position Tx"><img src="images/SaveBanPic.png" lazypath="images/Page5/Tx.png" /></div>
+                <div class="Position Rw">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page5/Rw.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第六场景-->
+        <div class="cmn-Scenes PublicScenes Page6" id="Page6">
+            <div class="Inner">
+                <div class="Position Text1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Text1.png" />
+                </div>
+                <div class="Position Clothes1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Clothes1.png" />
+                </div>
+                <div class="Position Text2">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Text2.png" />
+                </div>
+                <div class="Position Tx">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Tx.png" />
+                </div>
+                <div class="Position Text3">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Text3.png" />
+                </div>
+                <div class="Position Text6 cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:2800},{styles:{'top':'731px','opacity':'1'},speed:800,easing:'easeOutBounce'}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page6/Text6.png" />
+                </div>
+
+            </div>
+        </div>
+
+        <!--第七场景-->
+        <div class="cmn-Scenes PublicScenes Page7" id="Page7">
+            <div class="Inner">
+                <div class="Position Text1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page7/Text1.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第八场景-->
+        <div class="cmn-Scenes PublicScenes Page8" id="Page8">
+            <div class="Inner">
+                <div class="Text1 cmn-animate Position" cfg="{action:[{styles:{'opacity':'1'},speed:1000}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/Text1.png" />
+                </div>
+                <div class="DD cmn-animate Position" cfg="{action:[{styles:{'opacity':'0'},speed:1300},{styles:{'opacity':'0'},speed:500},{styles:{'opacity':'1'},speed:500},{styles:{'opacity':'0'},speed:500},{styles:{'opacity':'1'},speed:500}],loop:1,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/DD.png" />
+                </div>
+                <div class="Rw Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/Rw.png" />
+                </div>
+                <div class="Text2 cmn-animate Position" cfg="{action:[{styles:{'opacity':'0'},speed:1800},{styles:{'opacity':'1'},speed:800}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/Text2.png" />
+                </div>
+                <div class="Text3 Position" >
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/Text3.png" />
+                </div>
+                <!--电池-->
+                <div class="Position DianChi" cfg="{action:[{styles:{'opacity':'0'},speed:4000},{styles:{'opacity':'1','top':'775px'},speed:1500,easing:'easeOutBounce'}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/DianChi.png" />
+                </div>
+                <!--被砸中出来的线-->
+                <div class="Position Line"><img src="images/SaveBanPic.png" lazypath="images/Page8/Line.png" /></div>
+
+                <!--人物-->
+                <div class="Rw2 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page8/Rw2.png" />
+                </div>
+                
+                <div class="Text4 Position"><img src="images/SaveBanPic.png" lazypath="images/Page8/Text4.png" /></div>
+            </div>
+        </div>
+        <!--第九场景-->
+        <div class="cmn-Scenes PublicScenes Page9" id="Page9">
+            <div class="Inner">
+                <div class="Text1 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page9/Text1.png" />
+                </div>
+                <div class="Rw Position">
+                    <!--<img src="images/SaveBanPic.png" lazypath="images/Page9/Rw.png" />-->
+                </div>
+            </div>
+        </div>
+
+        <!--第十场景-->
+        <div class="cmn-Scenes PublicScenes Page10" id="Page10">
+            <div class="Inner">
+                <div class="Text1 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page10/Text1.png" />
+                </div>
+                <div class="MoneyPic Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page10/MoneyPic.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第十一场景-->
+        <div class="cmn-Scenes PublicScenes Page11" id="Page11">
+            <div class="Inner">
+                <div class="Text Text1 Position cmn-animate" cfg="{action:[{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text1.png" />
+                </div>
+                <div class="Text Text2 Position cmn-animate" cfg="{action:[{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text2.png" />
+                </div>
+                <div class="Text Text3 Position cmn-animate" cfg="{action:[{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text3.png" />
+                </div>
+                <div class="Pigs Position"><img src="images/SaveBanPic.png" lazypath="images/Page11/Pigs.png" /></div>
+                <div class="Text Text7 Position cmn-animate" cfg="{action:[{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text7.png" />
+                </div>
+                <div class="Text Text4 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:800},{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text4.png" />
+                </div>
+                <div class="Text Text5 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text5.png" />
+                </div> 
+                <div class="Text Text6 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:2000},{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page11/Text6.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第十二场景-->
+        <div class="cmn-Scenes PublicScenes Page12" id="Page12">
+            <div class="Inner">
+                <div class="Text Text1 Position cmn-animate" cfg="{action:[{styles:{'left':'84px'},speed:1000}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Text1.png" />
+                </div>
+                <div class="Text Money1 Position cmn-animate" cfg="{action:[{styles:{'top':'-500px'},speed:500},{styles:{'top':'0'},speed:1500,easing:'easeOutBounce'}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Money1.png" />
+                </div>
+                <div class="Text Text2 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:1500},{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Text2.png" />
+                </div>
+                <div class="Text HongB Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/HongB.png" />
+                </div>
+                <div class="Text HongBText Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:2800},{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/HongBText.png" />
+                </div>
+                <div class="Text Text3 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:4200},{styles:{'opacity':'1'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Text3.png" />
+                </div>
+                <div class="Text Money2 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Money2.png" />
+                </div>
+                <div class="Text HongB2 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:5200},{styles:{'opacity':'1'},speed:1000}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/HongB.png" />
+                </div>
+                <div class="Text Text4 Position cmn-animate" cfg="{action:[{styles:{'width':'0'},speed:6500},{styles:{'opacity':'1'},speed:1},{styles:{'width':'523px'},speed:1500}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page12/Text4.png" />
+                </div>
+            </div>
+        </div>
+        <!--第十三场景-->
+        <div class="cmn-Scenes PublicScenes Page13" id="Page13">
+            <div class="Inner">
+                <div class="Text1 Position FromRightToLeft">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page13/Text1.png" />
+                </div>
+                <div class="Tx Position FromLeftToRight">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page13/Tx.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第十四场景-->
+        <div class="cmn-Scenes PublicScenes Page14" id="Page14">
+            <div class="Inner">
+                <div class="Text1 Position FromSmallToLarge">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page14/Text1.png" />
+                </div>
+            </div>
+        </div>
+        <!--第十五场景-->
+        <div class="cmn-Scenes PublicScenes Page15" id="Page15">
+            <div class="Inner">
+                <div class="TailPic Position ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page15/TailPic.png" />
+                </div>
+                <div class="Xiez Position ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page15/Xiez.png" />
+                </div>
+                <div class="Text1 Position cmn-animate" cfg="{action:[{styles:{'width':'0'},speed:200},{styles:{'width':'432px'},speed:2800}],loop:0,index:0}">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page15/Text1.png" />
+                </div>
+                <div class="Text2 Position ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page15/Text2.png" />
+                </div>
+            </div>
+        </div>
+        <!--第十六场景-->
+        <div class="cmn-Scenes PublicScenes Page16" id="Page16">
+            <div class="Inner">
+                <div class="Text1 Position ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page16/Text1.png" />
+                </div>
+                <div class="Text2 Position FromSmallToLarge">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page16/Text2.png" />
+                </div>
+                <div class="Rw Position FromSmallToLarge">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page16/Rw.png" />
+                </div>
+                <div class="Text3 Position ">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page16/Text3.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第十七场景-->
+        <div class="cmn-Scenes PublicScenes Page17" id="Page17">
+            <div class="Inner">
+                <div class="Pic1 Position FromRightToLeft">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page17/Pic1.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第十八场景-->
+        <div class="cmn-Scenes PublicScenes Page18" id="Page18" loadjs="true">
+            <div class="Inner">
+                <div class="Tx1 Position jscTx1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page18/Tx1.png" />
+                </div>
+                <div class="Text1 Position jscText1">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page18/Text1.png" />
+                </div>
+                <div class="Tx2 Position jscTx2"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx2.png" /></div>
+                <div class="Text2 Position jscText2"> <img src="images/SaveBanPic.png" lazypath="images/Page18/Text2.png" /></div>
+                <div class="Tx3 Position jscTx3"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx3.png" /></div>
+                <div class="Tx4 Position jscTx4"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx4.png" /></div>
+                <div class="Tx5 Position jscTx5"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx5.png" /></div>
+                <div class="Tx6 Position jscTx6"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx6.png" /></div>
+                <div class="Tx7 Position jscTx7"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx7.png" /></div>
+                <div class="Text3 Position jscText3"><img src="images/SaveBanPic.png" lazypath="images/Page18/Text3.png" /></div>
+                <div class="Tx8 Position jscTx8"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx4.png" /></div>
+                <!--<div class="Rw Position"><img src="images/SaveBanPic.png" lazypath="images/Page18/Rw.png" /></div>-->
+                <!--第三个女朋友头像下的文案-->
+                <div class="Position ZuiHouNvText jscZuiHouNvText"><img src="images/SaveBanPic.png" lazypath="images/Page18/ZuiHouNvText.png" /></div>
+
+                <!--最后一个男人物-->
+                <div class="Position ZuiHouNanTx jscZuiHouNanTx">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page18/ZuiHouNan.png" />
+                </div>
+                <!--最后一个女人物-->
+                <div class="ZuiHouNvTxWrap jscZuiHouNvTxWrap">
+                    <div class="Position ZuiHouNvTx">
+                        <img src="images/SaveBanPic.png" lazypath="images/Page18/ZuiHouNvTx.png" />
+                    </div>
+                    <div class="Position ZuiHouNvSz jscZuiHouNvSz">
+                        <img src="images/SaveBanPic.png" lazypath="images/Page18/ZuiHouNvSz.png" />
+                    </div>
+                </div>
+
+                <!--手-->
+                <div class="HandClick jscHandClick">
+                    <!--<img src="images/SaveBanPic.png" lazypath="images/Page18/Click.png" />-->
+                    <img class="Click_1" src="images/SaveBanPic.png" lazypath="images/Page18/Click_1.png" />
+                    <img src="images/SaveBanPic.png" lazypath="images/Page18/Click_2.png" />
+                </div>
+
+
+                <!--手指-->
+                <div class="FingerPic jscFingerPic">
+                    <img src="images/SaveBanPic.png" lazypath="images/FingerPic_3.png" />
+                    <img class="FingerPic_2" src="images/SaveBanPic.png" lazypath="images/FingerPic_4.png" />
+                </div>
+                <!--<div class="Tx2 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:3000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx2.png" /></div>
+            <div class="Text2 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:3000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"> <img src="images/SaveBanPic.png" lazypath="images/Page18/Text2.png" /></div>
+            <div class="Tx3 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:3000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx3.png" /></div>
+            <div class="Tx4 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:3000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx4.png" /></div>
+            <div class="Tx5 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:6000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx5.png" /></div>
+            <div class="Tx6 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:9000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx6.png" /></div>
+            <div class="Tx7 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:9000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2000},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx7.png" /></div>
+            <div class="Text3 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:12000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2500},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Text3.png" /></div>
+            <div class="Tx8 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:12000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1'},speed:2500},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx4.png" /></div>
+            <div class="Tx9 Position cmn-animate" cfg="{action:[{styles:{'opacity':'0'},speed:14000},{styles:{'opacity':'1'},speed:1000},{styles:{'opacity':'1','left':'207px'},speed:2500},{styles:{'opacity':'0'},speed:1000}],loop:0,index:0}"><img src="images/SaveBanPic.png" lazypath="images/Page18/Tx9.png" /></div>
+            <div class="Rw Position"><img src="images/SaveBanPic.png" lazypath="images/Page18/Rw.png" /></div>-->
+
+            </div>
+        </div>
+
+
+     
+        <!--第十九场景-->
+        <div class="cmn-Scenes PublicScenes Page19" id="Page19">
+            <div class="Inner">
+                <div class="Pic1 Position FromSmallToLarge">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page19/Pic1.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第二十场景-->
+        <div class="cmn-Scenes PublicScenes Page20" id="Page20">
+            <div class="Inner">
+                <div class="Text1 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page20/Text1.png" />
+                </div>
+                <div class="Tx Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page20/Tx.png" />
+                </div>
+                <div class="Text3 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page20/Text2.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第二十一场景-->
+        <div class="cmn-Scenes PublicScenes Page21" id="Page21">
+            <div class="Inner">
+                <div class="Text1 Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page21/Text1.png" />
+                </div>
+                <div class="Rw Position">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page21/Rw.png" />
+                </div>
+            </div>
+        </div>
+
+        <!--第二十二场景-->
+        <div class="cmn-Scenes PublicScenes Page22" id="Page22">
+            <div class="Inner">
+                <div class="Text1 Position ImgRotate">
+                    <img src="images/SaveBanPic.png" lazypath="images/Page22/Pic1.jpg" />
+                </div>
+            </div>
+        </div>
+        <!--第二十三场景-->
+        <div class="cmn-Scenes PublicScenes Page23" id="Page23">
+            <div class="Inner">
+                <img class="Text Text1 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:500},,{styles:{'right':'342px','opacity':'1'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text1.png" />
+                <img class="Text Text2 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:800},{styles:{'right':'312px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text2.png" />
+                <img class="Text Text3 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:1100},{styles:{'right':'283px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text3.png" />
+                <img class="Text Text4 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:1400},{styles:{'right':'253px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text4.png" />
+                <img class="Text Text5 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:1700},{styles:{'right':'224px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text5.png" />
+                <img class="Text Text6 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:2000},{styles:{'right':'213px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text6.png" />
+                <img class="Text Text7 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:2300},{styles:{'right':'205px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text7.png" />
+                <img class="Text Text8 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:2600},{styles:{'right':'195px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text8.png" />
+                <img class="Text Text9 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:2900},{styles:{'right':'183px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text9.png" />
+                <img class="Text Text10 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:3200},{styles:{'right':'174px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text10.png" />
+                <img class="Text Text11 cmn-animate" cfg="{action:[{styles:{'right':'-1300px'},speed:3500},{styles:{'right':'166px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text11.png" />
+                <!--<img class="Text TextBottom Text12 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:3800},{styles:{'left':'105px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text12.png" />
+            <img class="Text TextBottom Text13 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:4100},{styles:{'left':'137px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text13.png" />
+            <img class="Text TextBottom Text14 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:4400},{styles:{'left':'169px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text14.png" />
+            <img class="Text TextBottom Text15 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:4700},{styles:{'left':'200px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text15.png" />
+            <img class="Text TextBottom Text16 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:5000},{styles:{'left':'232px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text16.png" />
+            <img class="Text TextBottom Text17 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:5300},{styles:{'left':'265px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text17.png" />
+            <img class="Text TextBottom Text18 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:5600},{styles:{'left':'298px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text18.png" />
+            <img class="Text TextBottom Text19 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:5900},{styles:{'left':'331px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text19.png" />
+            <img class="Text TextBottom Text20 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:6200},{styles:{'left':'364px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text20.png" />
+            <img class="Text TextBottom Text21 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:6500},{styles:{'left':'398px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text21.png" />
+            <img class="Text TextBottom Text22 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:6800},{styles:{'left':'439px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text22.png" />
+            <img class="Text TextBottom Text23 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:7100},{styles:{'left':'452px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text23.png" />
+            <img class="Text TextBottom Text24 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:7100},{styles:{'left':'464px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text23.png" />
+            <img class="Text TextBottom Text25 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:7100},{styles:{'left':'483px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text23.png" />
+            <img class="Text TextBottom Text26 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:7100},{styles:{'left':'495px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text23.png" />
+            <img class="Text TextBottom Text27 cmn-animate" cfg="{action:[{styles:{'left':'-1000px'},speed:7100},{styles:{'left':'507px'},speed:800}],loop:0,index:0}" src="images/SaveBanPic.png" lazypath="images/Page23/Text23.png" />-->
+
+                <div class="Text TextBottom Text12"><img src="images/SaveBanPic.png" lazypath="images/Page23/HText1.png" /></div>
+                <div class="Text TextBottom Text13"><img src="images/SaveBanPic.png" lazypath="images/Page23/HText2.png" /></div>
+                <div class="Text TextBottom Text14"><img src="images/SaveBanPic.png" lazypath="images/Page23/HText3.png" /></div>
+
+
+                <div class="Pic"><img src="images/SaveBanPic.png" lazypath="images/Page23/Pic1.png" /></div>
+                <!--查看性格按钮-->
+                <div class="MoreBtn">
+                    <a href="http://www.newbalance.com.cn/classic" target="_blank" onclick="ga('send', 'event', 'NBGrandpagu', 'button'); ga('send', 'button', 'click');"><img src="images/SaveBanPic.png" lazypath="images/Page23/MoreBtn.png" /></a>
+                </div>
+            </div>
+        </div>
+        
+    </div><!--Main_end-->
+</div><!--Wrap_end-->
+
+    <div class="TopBg" style="width: 100%; height: 24px; background: #e74c3c;position:absolute;top:0;left:0; display:none;"></div>
+    <div class="BottomBg" style="width: 100%; height: 24px; background: #e74c3c; position: absolute; bottom: 0; left: 0; display: none; "></div>
+</body>
+<script>
+    Cmn.Func.MobileAdaptive(640,1000, "images/AdviseVertical.png", Cmn.Func.MobileAdaptiveMode.WidthHeight);
+</script>
+</html>
