@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<script type="text/javascript" src="../js/WeixinApi.js?v=4.0"></script>
+<script type="text/javascript">
+   
+   window.Data={"list":[
+
+            {
+                "title": "真爱",
+                "imgUrl": "Q_images/zhenai.jpg"
+               
+            },
+            {
+                "title": "鸿运",
+                "imgUrl": "Q_images/hongyun.jpg"
+               
+            },
+            {
+                "title": "大顺",
+                "imgUrl": "Q_images/dashun.jpg"
+           
+            },
+            {
+               "title": "霸气",
+                "imgUrl": "Q_images/baqi.jpg"
+            
+            },
+            {
+                "title": "成功",
+                "imgUrl": "Q_images/chenggong.jpg"
+            },
+            {
+               "title": "智慧",
+                "imgUrl": "Q_images/zhihui.jpg"
+            },
+            {
+              "title": "多才",
+                "imgUrl": "Q_images/duocai.jpg"
+      
+            },
+            {
+               "title": "成熟",
+                "imgUrl": "Q_images/chengshu.jpg"
+            },
+            {
+               "title": "自由",
+                "imgUrl": "Q_images/ziyou.jpg"
+            },
+            {
+               "title": "知足",
+                "imgUrl": "Q_images/zhizu.jpg" 
+            },
+            {
+                "title": "转运",
+                "imgUrl": "Q_images/zhuanyun.jpg"  
+            },
+            {
+                "title": "旅行",
+                "imgUrl": "Q_images/luxing.jpg"
+            },
+            {
+                "title": "任性",
+                "imgUrl": "Q_images/renxing.jpg"
+            },
+            {
+               "title": "桃花运",
+                "imgUrl": "Q_images/taohuayun.jpg"
+            },
+            {
+              "title": "良缘",
+                "imgUrl": "Q_images/liangyuan.jpg"
+            },
+            {
+               "title": "快乐",
+                "imgUrl": "Q_images/kuaile.jpg"
+            },
+            {
+                "title": "健康",
+                "imgUrl": "Q_images/jiankang.jpg"
+        
+            },
+            {
+               "title": "奋斗",
+                "imgUrl": "Q_images/fendou.jpg"
+            },
+            {
+                "title": "财运",
+                "imgUrl": "Q_images/caiyun.jpg"    
+            },
+            {
+               "title": "爱情",
+                "imgUrl": "Q_images/aiqing.jpg"   
+            },
+            {
+               "title": "安产",
+                "imgUrl": "Q_images/anchan.jpg" 
+            },
+            {
+                "title": "利事",
+                "imgUrl": "Q_images/lishi.jpg"
+            },
+            {
+               "title": "白首",
+                "imgUrl": "Q_images/baishou.jpg"
+            },
+            {
+               "title": "蜜恋",
+                "imgUrl": "Q_images/milian.jpg"
+            },
+            {
+               "title": "喜结",
+                "imgUrl": "Q_images/xijie.jpg"
+            },
+            {
+                "title": "佑儿",
+                "imgUrl": "Q_images/youer.jpg"
+            },
+            {
+               "title": "发财",
+                "imgUrl": "Q_images/facai.jpg"
+            },
+            {
+                "title": "真爱",
+                "imgUrl": "Q_images/zhenai.jpg"    
+            },
+            {
+                "title": "温柔",
+                "imgUrl": "Q_images/wenrou.jpg"   
+            }
+			]
+			}
+			
+         function setActivityNameAndContentImage(){
+		 
+		 var index=(Math.random()*( window.Data.list.length-1)).toFixed(0);
+		 
+		 document.getElementById("activity-name").innerHTML="我抽到的新年签:"+window.Data.list[index].title;
+		 
+		 document.getElementById("content-Image").src=window.Data.list[index].imgUrl; 
+		}
+</script>
+
+<title>2015乙未羊，为自己摇枚新年签</title>
+<link rel="stylesheet" type="text/css" href="Css/page_mp_article_improve22f6d8.css">
+<style></style>
+</head>
+
+<body id="activity-detail" class="zh_CN " onLoad=setActivityNameAndContentImage()>
+<script>
+   // 需要分享的内容，请放到ready里
+            WeixinApi.ready(function(Api) {
+                // 微信分享的数据
+                var wxData = {
+                    "appId":  "", // 服务号可以填写appId
+                    "imgUrl": 'http://resource.h5.yi6.com/Qiuqian/gameIcon.jpg',
+                    "link"  : 'http://resource.h5.yi6.com/Qiuqian',
+                    "desc"  : '2015乙未羊，为自己摇枚新年签！',
+                    "title" : '2015新年签'
+                };
+
+                // 分享的回调
+                var wxCallbacks = {
+                    // 收藏操作是否触发回调，默认是开启的
+                    favorite : false,
+
+                    // 分享操作开始之前
+                    ready : function() {
+					  
+                        // 你可以在这里对分享的数据进行重组
+                        // alert("准备分享");
+                    },
+                    // 分享被用户自动取消
+                    cancel : function(resp) {
+                        // 你可以在你的页面上给用户一个小Tip，为什么要取消呢？
+                        // alert("分享被取消，msg=" + resp.err_msg);
+                    },
+                    // 分享失败了
+                    fail : function(resp) {
+                        // 分享失败了，是不是可以告诉用户：不要紧，可能是网络问题，一会儿再试试？
+                        //alert("分享失败，msg=" + resp.err_msg);
+                    },
+                    // 分享成功
+                    confirm : function(resp) {
+                        // 分享成功了，我们是不是可以做一些分享统计呢？
+                        //alert("分享成功，msg=" + resp.err_msg);
+                    },
+                    // 整个分享过程结束
+                    all : function(resp,shareTo) {
+                        // 如果你做的是一个鼓励用户进行分享的产品，在这里是不是可以给用户一些反馈了？
+                        // alert("分享" + (shareTo ? "到" + shareTo : "") + "结束，msg=" + resp.err_msg);
+                    }
+                };
+                // 用户点开右上角popup菜单后，点击分享给好友，会执行下面这个代码
+                Api.shareToFriend(wxData, wxCallbacks);
+
+                // 点击分享到朋友圈，会执行下面这个代码
+                Api.shareToTimeline(wxData, wxCallbacks);
+
+                // 点击分享到腾讯微博，会执行下面这个代码
+                Api.shareToWeibo(wxData, wxCallbacks);
+
+                // iOS上，可以直接调用这个API进行分享，一句话搞定
+                Api.generalShare(wxData,wxCallbacks);
+            });	
+</script>
+
+<div id="js_cmt_more" class="discuss_container access" style="display:none;">
+
+</div>
+<div id="js_cmt_mine" class="discuss_container editing access" style="display:none;">
+
+</div>
+
+
+<div id="js_article" class="rich_media">
+  <div id="js_top_ad_area" class="top_banner"></div>
+  <div class="rich_media_inner">
+    <h2 class="rich_media_title" id="activity-name"> </h2>
+    <div class="rich_media_meta_list"> <em id="post-date" class="rich_media_meta rich_media_meta_text">2015年</em> <a class="rich_media_meta rich_media_meta_link rich_media_meta_nickname"  id="post-user">属于您的新年签！</a> </div>
+    <div id="page-content">
+      <div id="img-content">
+        <div class="rich_media_content" id="js_content">
+		<!--
+          <p style=""><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(0, 112, 192); box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(255, 255, 255); font-family: 微软雅黑; font-size: 12px; line-height: 0px; box-sizing: border-box !important; word-wrap: break-word !important;">﻿</span><img data-ke-src="http://i2.w.yun.hjfile.cn/doc/201311/d1cb6b2d4d3843d8ad8e77a79a337039.gif" data-ratio="0.5" data-w="22" data-src="http://mmbiz.qpic.cn/mmbiz/4ZAPmsuKALicricRDj6kQQoo5rqTz8jtsLxE1qANts8RNvoyEI6hxrkF2TKhqAmdEREFIiaToTtmxA81JoHqJ8jzw/0" class="" id="c1420862307550" data-type="gif" width="auto" width="auto" data-src="http://mmbiz.qpic.cn/mmbiz/4ZAPmsuKALicricRDj6kQQoo5rqTz8jtsLxE1qANts8RNvoyEI6hxrkF2TKhqAmdEREFIiaToTtmxA81JoHqJ8jzw/0?tp=webp" style="margin: 0px; padding: 0px; border: 0px; color: rgb(255, 255, 255); font-family: 微软雅黑; font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important; visibility: visible !important; width: auto !important;"  /></span></strong></strong><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(0, 112, 192); box-sizing: border-box !important; word-wrap: break-word !important;"></span><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">点上方“</span></strong></strong></span><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(0, 112, 192); box-sizing: border-box !important; word-wrap: break-word !important;">哲学人生网</span></strong><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">”关注我，发送文字&quot;</span></strong></strong></strong></span><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(0, 112, 192); box-sizing: border-box !important; word-wrap: break-word !important;">求签</span></strong><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><strong style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;">&quot;摇取你的新年签~</span></strong></strong></strong></span><strong style="margin: 0px; padding: 0px; max-width: 100%; font-size: 14px; box-sizing: border-box !important; word-wrap: break-word !important;"><span style="margin: 0px; padding: 0px; max-width: 100%; font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important;"></span></strong></strong><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(165, 165, 165); font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important;"></span></strong><span style="margin: 0px; padding: 0px; max-width: 100%; color: rgb(165, 165, 165); font-size: 12px; box-sizing: border-box !important; word-wrap: break-word !important;"></span><br style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"  /> </p>
+		 -->
+		 <hr style=""  />
+		 <br/>
+		 <!--
+         <p style=""><br style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"  />
+         </p>
+		 -->
+		 <p style=""><img id="content-Image" data-s="300,640" data-type="jpg"  data-ratio="1.326086956521739" data-w=""  /></p>
+         <br/>
+		<!--
+		 <p style=""><br style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"  />
+          </p>
+		  -->
+          <blockquote style="padding: 12px 8px; max-width: 100%; white-space: normal; font-size: 12px; font-family: 微软雅黑; border-radius: 5px; text-align: center; color: rgb(51, 51, 51); box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(45, 163, 7);"><a class="media_tool_meta meta_primary" id="js_view_source" href="../index.htm">“再摇一次”摇取属于您的新年签！</a><br style="margin: 0px; padding: 0px; max-width: 100%; box-sizing: border-box !important; word-wrap: break-word !important;"  />
+          </blockquote>
+          <p style="margin-top: 0px; margin-bottom: 0px; padding: 0px; max-width: 100%; min-height: 1em; white-space: pre-wrap; overflow: hidden; font-size: 12px; font-family: 微软雅黑; color: rgb(51, 51, 51); box-sizing: border-box !important; word-wrap: break-word !important; background-color: rgb(255, 255, 255);"><img src="0.gif" data-ratio="0.7916666666666666" data-w="48" width="auto" width="auto" src="0.jpg" style="margin: 0px; padding: 0px; border: 0px currentcolor; border-image-source: none; box-sizing: border-box !important; word-wrap: break-word !important; visibility: visible !important; width: auto !important;"  /></p>
+         </div>
+		
+        <link rel="stylesheet" type="text/css" href="Css/page_mp_article_improve_combo22ebff.css">
+		
+		<!--阅读原文Start--->
+        <div class="rich_media_tool" id="js_toobar"> 
+		  <a class="media_tool_meta meta_primary" id="js_view_source" href="http://h5.yi6.com">更多好玩的</a>
+		 </div>
+		<!--阅读原文End-->  
+  </div>
+</div>
+</body>
+</html>
