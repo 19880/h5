@@ -94,8 +94,8 @@ $(function(){
             dataType: "text",
             success: function(xml) {
             	var score = $(xml).find('score').text();
-		    	var orginValue = $result[0].value;
-		        $result[0].value = orginValue + wordName + ':' + score + '\n';
+		    	var originValue = $result[0].value;
+		        $result[0].value = originValue + wordName + ':' + score + '\n';
             }
 		})
 }
