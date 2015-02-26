@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>取名</title>
+<meta name="description" content="Hello world!">	
+<meta name="keywords" content="web,page">
+</head>
+<link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<body>
+<h3>组合名字</h3>
+<table>
+	<tr>
+	  <td>
+	  	<textarea id="mz_words" style="width:300px; height:200px;">金 山 快 盘</textarea>
+	  </td>
+	  <td>
+	  	<input id="mz_ipt_submit" type="submit"/>
+	  </td>
+	  <td>
+	  	<textarea id="mz_result" style="width:300px; height:200px;"></textarea>
+	  </td>
+	</tr>
+</table>
+
+<h3>名字测分</h3>
+<table>
+	<tr>
+	  <td>
+	  	<textarea id="cf_words" style="width:300px; height:200px;"></textarea>
+	  </td>
+	  <td>
+	  	<input id="cf_ipt_submit" type="submit"/>
+	  </td>
+	  <td>
+	  	<textarea id="cf_result" style="width:300px; height:200px;"></textarea>
+	  </td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+$(function(){
+	$('#mz_ipt_submit').click(function(){
+		var _wordsValue = $('#mz_words')[0].value;
+		var _wordsArray = _wordsValue.split(' ');
+		var _wordsNumber = 2;
+		var _result = [];
+
+		getWord(_wordsArray, _wordsNumber, _result);
+		//console.log(_result);
+
+		$('#mz_result')[0].value = _result.join('\n');
+	});
+
+	Array.prototype.clone=function(){ return this.slice(0); }
+	function getWord(_wordsArray, _wordsNumber, _result, _words){
+		_words = _words || [];
+		for(var i = 0; i<_wordsArray.length; i++){
+			var _w = _words.clone();
+			_w.push(_wordsArray[i]);
+			if( _words.length + 1 == _wordsNumber ){
+				_result.push(_w.join(''));
+			} else {
+				_result.concat(_words, getWord(_wordsArray, _wordsNumber, _result, _w));
+			}
+		}
+	}
+
+
+	$('#cf_ipt_submit').click(function(){
+		var _wordsValue = $('#cf_words')[0].value;
+		var _wordsArray = _wordsValue.split('\n');
+		$('#cf_result')[0].value = '';
+		/*
+		** 解决XMLHttpRequest cannot load file
+		** 需设置chrome打开方式
+		** chrome.exe --disable-web-security
+		*/
+		for(var i = 0; i<_wordsArray.length; i++){
+			getScore(_wordsArray[i]);
+		}
+	});
+
+	function getScore(wordName){
+		var $result = $('#cf_result');
+		$.ajax({
+			type: "GET",
+            url: "http://service.1518.com/iphone/gongsi.php",
+            data:{
+            	word: wordName,
+            },
+            cache: false,
+            dataType: "text",
+            success: function(xml) {
+            	var score = $(xml).find('score').text();
+		    	var orginValue = $result[0].value;
+		        $result[0].value = orginValue + wordName + ':' + score + '\n';
+            }
+		})
+}
+});
+</script>
+</body>
+</html>
