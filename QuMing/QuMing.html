@@ -99,7 +99,7 @@ $(function(){
             success: function(xml) {
             	var score = $(xml).find('score').text();
 		    	var originValue = $result[0].value;
-		        $result[0].value = originValue + wordName + ':' + score + '\n';
+		        $result[0].value = originValue + wordName + '\t' + score + '\n';
             }
 		})
 }
