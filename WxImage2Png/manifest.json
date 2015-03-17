@@ -1,0 +1,18 @@
+{
+	"name": "微信WEB图片WebP转PNG",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "The first extension that I made.",
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+	"background": {
+	      "page": "background.html"
+	},
+	"content_scripts": [ {
+	      "js": [ "js/jquery.min.js", "js/content-js.js" ],
+	      "matches": [ "http://*/*", "https://*/*" ]
+	} ],
+	"options_page": "options.html",
+	"permissions": [ "background", "http://*/*", "https://*/*" ]
+}
