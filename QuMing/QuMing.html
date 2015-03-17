@@ -76,11 +76,6 @@ $(function(){
 		var _wordsValue = $('#cf_words')[0].value;
 		var _wordsArray = _wordsValue.split('\n');
 		$('#cf_result')[0].value = '';
-		/*
-		** 解决XMLHttpRequest cannot load file
-		** 需设置chrome打开方式
-		** chrome.exe --disable-web-security
-		*/
 		for(var i = 0; i<_wordsArray.length; i++){
 			getScore(_wordsArray[i]);
 		}
