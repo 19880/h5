@@ -1,0 +1,356 @@
+﻿{
+"res":{
+	"loading_10000": {"x":0,"y":0,"w":170,"h":170},
+	"loading_100000": {"x":170,"y":0,"w":170,"h":170},
+	"loading_110000": {"x":340,"y":0,"w":170,"h":170},
+	"loading_120000": {"x":510,"y":0,"w":170,"h":170},
+	"loading_130000": {"x":510,"y":0,"w":170,"h":170},
+	"loading_140000": {"x":680,"y":0,"w":170,"h":170},
+	"loading_150000": {"x":850,"y":0,"w":170,"h":170},
+	"loading_160000": {"x":0,"y":170,"w":170,"h":170},
+	"loading_170000": {"x":170,"y":170,"w":170,"h":170},
+	"loading_180000": {"x":340,"y":170,"w":170,"h":170},
+	"loading_190000": {"x":510,"y":170,"w":170,"h":170},
+	"loading_20000": {"x":680,"y":170,"w":170,"h":170},
+	"loading_200000": {"x":850,"y":170,"w":170,"h":170},
+	"loading_210000": {"x":0,"y":340,"w":170,"h":170},
+	"loading_220000": {"x":170,"y":340,"w":170,"h":170},
+	"loading_230000": {"x":340,"y":340,"w":170,"h":170},
+	"loading_240000": {"x":510,"y":340,"w":170,"h":170},
+	"loading_250000": {"x":680,"y":340,"w":170,"h":170},
+	"loading_260000": {"x":850,"y":340,"w":170,"h":170},
+	"loading_270000": {"x":0,"y":510,"w":170,"h":170},
+	"loading_280000": {"x":170,"y":510,"w":170,"h":170},
+	"loading_290000": {"x":340,"y":510,"w":170,"h":170},
+	"loading_30000": {"x":510,"y":510,"w":170,"h":170},
+	"loading_300000": {"x":680,"y":510,"w":170,"h":170},
+	"loading_310000": {"x":850,"y":510,"w":170,"h":170},
+	"loading_320000": {"x":0,"y":680,"w":170,"h":170},
+	"loading_330000": {"x":170,"y":680,"w":170,"h":170},
+	"loading_340000": {"x":340,"y":680,"w":170,"h":170},
+	"loading_350000": {"x":510,"y":680,"w":170,"h":170},
+	"loading_360000": {"x":680,"y":680,"w":170,"h":170},
+	"loading_370000": {"x":850,"y":680,"w":170,"h":170},
+	"loading_380000": {"x":0,"y":850,"w":170,"h":170},
+	"loading_390000": {"x":170,"y":850,"w":170,"h":170},
+	"loading_40000": {"x":340,"y":850,"w":170,"h":170},
+	"loading_400000": {"x":510,"y":850,"w":170,"h":170},
+	"loading_410000": {"x":680,"y":850,"w":170,"h":170},
+	"loading_420000": {"x":850,"y":850,"w":170,"h":170},
+	"loading_430000": {"x":0,"y":1020,"w":170,"h":170},
+	"loading_440000": {"x":170,"y":1020,"w":170,"h":170},
+	"loading_450000": {"x":340,"y":1020,"w":170,"h":170},
+	"loading_460000": {"x":510,"y":1020,"w":170,"h":170},
+	"loading_470000": {"x":680,"y":1020,"w":170,"h":170},
+	"loading_480000": {"x":850,"y":1020,"w":170,"h":170},
+	"loading_490000": {"x":0,"y":1190,"w":170,"h":170},
+	"loading_50000": {"x":170,"y":1190,"w":170,"h":170},
+	"loading_500000": {"x":340,"y":1190,"w":170,"h":170},
+	"loading_60000": {"x":510,"y":1190,"w":170,"h":170},
+	"loading_70000": {"x":680,"y":1190,"w":170,"h":170},
+	"loading_80000": {"x":850,"y":1190,"w":170,"h":170},
+	"loading_90000": {"x":0,"y":1360,"w":170,"h":170}
+},
+"frames": {
+	"loading_1": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_10000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_10": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_100000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_11": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_110000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_12": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_120000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_13": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_130000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_14": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_140000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_15": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_150000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_16": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_160000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_17": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_170000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_18": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_180000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_19": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_190000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_2": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_20000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_20": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_200000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_21": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_210000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_22": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_220000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_23": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_230000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_24": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_240000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_25": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_250000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_26": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_260000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_27": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_270000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_28": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_280000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_29": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_290000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_3": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_30000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_30": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_300000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_31": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_310000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_32": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_320000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_33": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_330000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_34": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_340000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_35": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_350000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_36": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_360000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_37": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_370000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_38": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_380000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_39": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_390000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_4": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_40000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_40": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_400000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_41": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_410000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_42": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_420000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_43": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_430000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_44": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_440000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_45": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_450000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_46": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_460000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_47": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_470000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_48": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_480000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_49": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_490000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_5": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_50000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_50": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_500000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_6": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_60000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_7": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_70000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_8": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_80000","x":-84.5,"y":-84.5}
+		]
+	},
+	"loading_9": {
+		"totalFrame": 1,
+		"childrenFrame": [
+			{"res":"loading_90000","x":-84.5,"y":-84.5}
+		]
+	}
+}
+}

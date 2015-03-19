@@ -1,0 +1,36 @@
+#debugger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+    height: 120px;
+    background-color: rgba(0,0,0,0.75);
+    border: 1px solid rgba(255,255,255,0.75);
+    color: #fff;
+    z-index: 9999999;
+    display: none;
+    overflow: hidden;
+    word-break: break-all;
+    /*pointer-events: none;*/
+    font-size: 12px;
+    padding: 2px;
+}
+
+#debugger .output {
+    width: 100%;
+    height: 100%;
+}
+
+#debugger .btns {
+    position: absolute;
+    right: 7px;
+    top: 20px;
+    height: 20px;
+    text-align: right;
+    width: 160px;
+    padding: 2px;
+}
+
+#debugger .btns .btn{
+    display: inline-block;
+}

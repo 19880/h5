@@ -1,0 +1,19 @@
+<div>
+<script type="text/javascript">
+	var g_pdata;
+	(function () {
+		if (!window.JSON) return;
+
+		try {
+			g_pdata = JSON.parse(window.name);
+		} catch (e) {
+			return;
+		}
+		if (!g_pdata || !g_pdata.js) return;
+
+		var s = document.createElement("script");
+		s.src = g_pdata.js;
+		document.getElementsByTagName("script")[0].appendChild(s);
+	})();
+  </script>
+</div>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container width="640" height="1008" name="result_page">
+    <asset>images/result/background.png</asset>
+    <asset>images/result/title_1.png</asset>
+    <asset>images/result/title_2.png</asset>
+    <asset>images/numbers/[0-5].jpg</asset>
+
+    <asset>images/stars/1/[0-1].png</asset>
+    <asset>images/stars/2/[0-1].png</asset>
+    <asset>images/stars/3/[0-1].png</asset>
+    <asset>images/stars/4/[0-1].png</asset>
+    <asset>images/stars/5/[0-1].png</asset>
+    <asset>images/stars/light/motion_[0001-0010].png</asset>
+
+    <asset>images/result/kv/motion_[0001-0090].jpg</asset>
+
+    <asset>images/result/btn_bg.png</asset>
+
+    <asset>images/result/btn_replay_normal.png</asset>
+    <asset>images/result/btn_replay_click.png</asset>
+    <asset>images/result/btn_share_normal.png</asset>
+    <asset>images/result/btn_share_click.png</asset>
+    <asset>images/result/btn_ticket_normal.png</asset>
+    <asset>images/result/btn_ticket_click.png</asset>
+
+    <bitmap x="16" y="0" src="images/result/background.png"/>
+    <movie name="kv" x="81" y="110" width="391" height="708" src="images/result/kv/motion_[0001-0090].jpg"
+           duration="3.75">
+        <script frame="89" action="goToAndPlay:31"/>
+    </movie>
+    <bitmap x="45" y="36" src="images/result/title_1.png"/>
+    <bitmap x="479" y="32" src="images/result/title_2.png"/>
+    <movie name="star_count" x="494" y="119" width="44" height="43" src="images/numbers/[0-5].jpg" duration="2"
+           auto-play="false"/>
+
+    <container name="stars_view" x="496" y="297" width="84" height="369" enabled="false">
+        <container x="8" y="5" width="69" height="69">
+            <movie name="star" x="0" y="0" width="69" height="69" src="images/stars/1/[0-1].png" duration="2"
+                   auto-play="false"/>
+            <movie name="light" x="4" y="3" width="61" height="60" visible="false"
+                   src="images/stars/light/motion_[0001-0010].png" duration="0.417" auto-play="false"/>
+        </container>
+
+        <container x="8" y="78" width="69" height="69">
+            <movie name="star" x="0" y="0" width="69" height="69" src="images/stars/2/[0-1].png" duration="2"
+                   auto-play="false"/>
+            <movie name="light" x="4" y="3" width="61" height="60" visible="false"
+                   src="images/stars/light/motion_[0001-0010].png" duration="0.417" auto-play="false"/>
+        </container>
+
+        <container x="8" y="150" width="69" height="69">
+            <movie name="star" x="0" y="0" width="69" height="69" src="images/stars/3/[0-1].png" duration="2"
+                   auto-play="false"/>
+            <movie name="light" x="4" y="3" width="61" height="60" visible="false"
+                   src="images/stars/light/motion_[0001-0010].png" duration="0.417" auto-play="false"/>
+        </container>
+
+        <container x="8" y="222" width="69" height="69">
+            <movie name="star" x="0" y="0" width="69" height="69" src="images/stars/4/[0-1].png" duration="2"
+                   auto-play="false"/>
+            <movie name="light" x="4" y="3" width="61" height="60" visible="false"
+                   src="images/stars/light/motion_[0001-0010].png" duration="0.417" auto-play="false"/>
+        </container>
+
+        <container x="8" y="294" width="69" height="69">
+            <movie name="star" x="0" y="0" width="69" height="69" src="images/stars/5/[0-1].png" duration="2"
+                   auto-play="false"/>
+            <movie name="light" x="4" y="3" width="61" height="60" visible="false"
+                   src="images/stars/light/motion_[0001-0010].png" duration="0.417" auto-play="false"/>
+        </container>
+    </container>
+
+    <bitmap x="33" y="878" src="images/result/btn_bg.png"/>
+
+    <container name="btn_replay" x="50" y="897" width="171" height="79">
+        <bitmap name="normal" src="images/result/btn_replay_normal.png"/>
+        <bitmap name="click" src="images/result/btn_replay_click.png"/>
+    </container>
+
+    <container name="btn_ticket" x="232" y="897" width="172" height="79">
+        <bitmap name="normal" src="images/result/btn_ticket_normal.png"/>
+        <bitmap name="click" src="images/result/btn_ticket_click.png"/>
+    </container>
+
+    <container name="btn_share" x="416" y="897" width="172" height="79">
+        <bitmap name="normal" src="images/result/btn_share_normal.png"/>
+        <bitmap name="click" src="images/result/btn_share_click.png"/>
+    </container>
+</container>

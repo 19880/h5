@@ -1,0 +1,56 @@
+﻿{
+"res":{
+	"handLongL0000": {"x":0,"y":0,"w":190,"h":33},
+	"handLongL0001": {"x":0,"y":0,"w":190,"h":33},
+	"handLongL0002": {"x":0,"y":33,"w":192,"h":33},
+	"handLongL0003": {"x":0,"y":66,"w":193,"h":33},
+	"handLongL0004": {"x":0,"y":66,"w":193,"h":33},
+	"handLongL0005": {"x":0,"y":66,"w":193,"h":33},
+	"handLongL0006": {"x":0,"y":99,"w":193,"h":33},
+	"handLongL0007": {"x":0,"y":33,"w":192,"h":33},
+	"handLongL0008": {"x":0,"y":0,"w":190,"h":33},
+	"handLongL0009": {"x":0,"y":0,"w":190,"h":33},
+	"handLongR0000": {"x":0,"y":132,"w":190,"h":33},
+	"handLongR0001": {"x":0,"y":132,"w":190,"h":33},
+	"handLongR0002": {"x":0,"y":165,"w":192,"h":33},
+	"handLongR0003": {"x":0,"y":198,"w":193,"h":33},
+	"handLongR0004": {"x":0,"y":231,"w":194,"h":33},
+	"handLongR0005": {"x":0,"y":198,"w":193,"h":33},
+	"handLongR0006": {"x":0,"y":198,"w":193,"h":33},
+	"handLongR0007": {"x":0,"y":264,"w":192,"h":33},
+	"handLongR0008": {"x":0,"y":132,"w":190,"h":33},
+	"handLongR0009": {"x":0,"y":132,"w":190,"h":33}
+},
+"frames": {
+	"handLongL": {
+		"totalFrame": 10,
+		"childrenFrame": [
+			{"res":"handLongL0000","x":0.75,"y":2},
+			{"res":"handLongL0001","x":-0.25,"y":2},
+			{"res":"handLongL0002","x":-1.25,"y":2},
+			{"res":"handLongL0003","x":-2.25,"y":2},
+			{"res":"handLongL0004","x":-3.25,"y":2},
+			{"res":"handLongL0005","x":-2.25,"y":2},
+			{"res":"handLongL0006","x":-2.25,"y":2},
+			{"res":"handLongL0007","x":-1.25,"y":2},
+			{"res":"handLongL0008","x":-0.25,"y":2},
+			{"res":"handLongL0009","x":0.75,"y":2}
+		]
+	},
+	"handLongR": {
+		"totalFrame": 10,
+		"childrenFrame": [
+			{"res":"handLongR0000","x":29.75,"y":2},
+			{"res":"handLongR0001","x":29.75,"y":2},
+			{"res":"handLongR0002","x":29.75,"y":2},
+			{"res":"handLongR0003","x":29.75,"y":2},
+			{"res":"handLongR0004","x":29.75,"y":2},
+			{"res":"handLongR0005","x":29.75,"y":2},
+			{"res":"handLongR0006","x":29.75,"y":2},
+			{"res":"handLongR0007","x":29.75,"y":2},
+			{"res":"handLongR0008","x":29.75,"y":2},
+			{"res":"handLongR0009","x":29.75,"y":2}
+		]
+	}
+}
+}

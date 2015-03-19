@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container width="640" height="1008" name="result_page">
+    <asset>images/index/background.png</asset>
+    <asset>images/index/btn_start_click.png</asset>
+    <asset>images/index/start/motion_[0001-0009].jpg</asset>
+    <asset>images/index/kv/motion_[0001-0030].jpg</asset>
+
+    <bitmap x="16" y="0" src="images/index/background.png"/>
+    <movie x="35" y="146" width="571" height="698" src="images/index/kv/motion_[0001-0030].jpg" duration="1.2"/>
+
+    <container name="btn_start" x="52" y="876" width="535" height="66">
+        <movie name="normal" x="6" y="11" width="523" height="40" src="images/index/start/motion_[0001-0009].jpg"
+                duration="0.375"/>
+        <bitmap name="click" src="images/index/btn_start_click.png"/>
+    </container>
+</container>

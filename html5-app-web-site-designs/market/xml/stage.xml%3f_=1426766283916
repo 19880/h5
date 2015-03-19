@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stage width="640" height="1008" name="jwposter">
+    <asset>images/loading/motion_[0001-0020].png</asset>
+    <container width="640" height="1008" name="page_box"/>
+    <container width="640" height="1008" name="popup_box" visible="false" bg-color="#000000E6"/>
+    <movie x="246" y="394" width="148" height="82" name="progress_bar" visible="false" src="images/loading/motion_[0001-0020].png" duration="0.833"/>
+</stage>

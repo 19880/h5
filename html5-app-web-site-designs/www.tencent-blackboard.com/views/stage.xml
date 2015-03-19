@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stage name="trp" width="640" height="1008" align="TOP_LEFT" scale-mode="noScale" bg-color="#FFFFFF">
+    <asset>sounds/bg.mp3</asset>
+    <asset>images/bg.jpg</asset>
+    <asset>images/loading/m_[0001-0019].png</asset>
+    <asset>images/share_mark.png</asset>
+
+    <container name="background" width="640" height="1008">
+        <bitmap src="images/bg.jpg" width="320" height="320"/>
+    </container>
+    <container name="content_box" width="640" height="1008"/>
+    <container name="loading_box" width="480" height="757" visible="false">
+        <movie x="190" y="328" width="100" height="100">
+            <frame>images/loading/m_[0001-0019].png</frame>
+        </movie>
+    </container>
+    <container name="popup_box" width="640" height="1008" bg-color="#000000E5" visible="false">
+        <container name="share_popup" width="640" height="1008">
+            <bitmap x="58" y="19" src="images/share_mark.png"/>
+        </container>
+    </container>
+</stage>

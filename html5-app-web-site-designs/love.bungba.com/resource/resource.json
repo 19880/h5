@@ -1,0 +1,134 @@
+{
+"resources":
+	[
+		{"name":"1_p1","type":"image","url":"assets/1_p1.png"},
+	  	{"name":"1_p1b","type":"image","url":"assets/1_p1b.png"},
+		{"name":"1_p2","type":"image","url":"assets/1_p2.png"},
+		{"name":"1_p3","type":"image","url":"assets/1_p3.png"},
+
+		{"name":"2_p1","type":"image","url":"assets/2_p1.jpg"},
+		{"name":"2_t1","type":"image","url":"assets/2_t1.png"},
+		{"name":"2_pp","type":"image","url":"assets/pp/2_pp.png"},
+
+		{"name":"3_p1","type":"image","url":"assets/3_p1.jpg"},
+		{"name":"3_p2","type":"image","url":"assets/3_p2.png"},
+		{"name":"3_p3","type":"image","url":"assets/3_p3.png"},
+		{"name":"3_t1","type":"image","url":"assets/3_t1.png"},
+		{"name":"3_t2","type":"image","url":"assets/3_t2.png"},
+		{"name":"3_pp","type":"image","url":"assets/pp/3_pp.png"},
+
+		{"name":"4_p1","type":"image","url":"assets/4_p1.jpg"},
+		{"name":"4_t1","type":"image","url":"assets/4_t1.png"},
+		{"name":"4_t2","type":"image","url":"assets/4_t2.png"},
+
+		{"name":"5_p1","type":"image","url":"assets/5_p1.jpg"},
+		{"name":"5_t1","type":"image","url":"assets/5_t1.png"},
+		{"name":"5_t2","type":"image","url":"assets/5_t2.png"},
+		{"name":"5_pp","type":"image","url":"assets/pp/5_pp.png"},
+
+		{"name":"6_p1","type":"image","url":"assets/6_p1.jpg"},
+		{"name":"6_p2","type":"image","url":"assets/6_p2.png"},
+		{"name":"6_p3","type":"image","url":"assets/6_p3.png"},
+		{"name":"6_p4","type":"image","url":"assets/6_p4.png"},
+		{"name":"6_p5","type":"image","url":"assets/6_p5.png"},
+		{"name":"6_t1","type":"image","url":"assets/6_t1.png"},
+		{"name":"6_t2","type":"image","url":"assets/6_t2.png"},
+		{"name":"6_pp","type":"image","url":"assets/pp/6_pp.png"},
+
+		{"name":"7_p1","type":"image","url":"assets/7_p1.jpg"},
+		{"name":"7_t1","type":"image","url":"assets/7_t1.png"},
+		{"name":"7_t2","type":"image","url":"assets/7_t2.png"},
+
+		{"name":"8_p1","type":"image","url":"assets/8_p1.jpg"},
+		{"name":"8_p2","type":"image","url":"assets/8_p2.png"},
+		{"name":"8_t1","type":"image","url":"assets/8_t1.png"},
+		{"name":"8_t2","type":"image","url":"assets/8_t2.png"},
+
+		{"name":"9_p1","type":"image","url":"assets/9_p1.jpg"},
+		{"name":"9_p2","type":"image","url":"assets/9_p2.png"},
+		{"name":"9_p3","type":"image","url":"assets/9_p3.png"},
+		{"name":"9_p4","type":"image","url":"assets/9_p4.png"},
+		{"name":"9_t1","type":"image","url":"assets/9_t1.png"},
+		{"name":"9_t2","type":"image","url":"assets/9_t2.png"},
+		{"name":"9_pp","type":"image","url":"assets/pp/9_pp.png"},
+
+		{"name":"10_p1","type":"image","url":"assets/10_p1.jpg"},
+		{"name":"10_t1","type":"image","url":"assets/10_t1.png"},
+		{"name":"10_t2","type":"image","url":"assets/10_t2.png"},
+		{"name":"10_pp","type":"image","url":"assets/pp/10_pp.png"},
+
+		{"name":"11_p1","type":"image","url":"assets/11_p1.jpg"},
+		{"name":"11_p2","type":"image","url":"assets/11_p2.png"},
+		{"name":"11_p3","type":"image","url":"assets/11_p3.png"},
+		{"name":"11_t1","type":"image","url":"assets/11_t1.png"},
+		{"name":"11_t2","type":"image","url":"assets/11_t2.png"},
+		{"name":"11_msk","type":"image","url":"assets/11_msk.png"},
+
+		{"name":"12_p1","type":"image","url":"assets/12_p1.jpg"},
+		{"name":"12_t1","type":"image","url":"assets/12_t1.png"},
+		{"name":"12_t2","type":"image","url":"assets/12_t2.png"},
+
+		{"name":"13_p1","type":"image","url":"assets/13_p1.jpg"},
+		{"name":"13_t1","type":"image","url":"assets/13_t1.png"},
+		{"name":"13_t2","type":"image","url":"assets/13_t2.png"},
+
+		{"name":"14_p1","type":"image","url":"assets/14_p1.jpg"},
+		{"name":"14_p2","type":"image","url":"assets/14_p2.png"},
+		{"name":"14_t1","type":"image","url":"assets/14_t1.png"},
+		{"name":"14_t2","type":"image","url":"assets/14_t2.png"},
+		{"name":"14_pp","type":"image","url":"assets/pp/14_pp.png"},
+
+		{"name":"15_p1","type":"image","url":"assets/15_p1.jpg"},
+		{"name":"15_t1","type":"image","url":"assets/15_t1.png"},
+		{"name":"15_t2","type":"image","url":"assets/15_t2.png"},
+
+		{"name":"16_p1","type":"image","url":"assets/16_p1.jpg"},
+		{"name":"16_t1","type":"image","url":"assets/16_t1.png"},
+		{"name":"16_t2","type":"image","url":"assets/16_t2.png"},
+
+		{"name":"17_p1","type":"image","url":"assets/17_p1.jpg"},
+		{"name":"17_t1","type":"image","url":"assets/17_t1.png"},
+		{"name":"17_t2","type":"image","url":"assets/17_t2.png"},
+		{"name":"17_pp","type":"image","url":"assets/pp/17_pp.png"},
+
+		{"name":"18_p1","type":"image","url":"assets/18_p1.jpg"},
+		{"name":"18_t1","type":"image","url":"assets/18_t1.png"},
+		{"name":"18_t2","type":"image","url":"assets/18_t2.png"},
+
+		{"name":"19_p2","type":"image","url":"assets/19_p2.png"},
+		{"name":"19_t1","type":"image","url":"assets/19_t1.png"},
+		{"name":"19_pp","type":"image","url":"assets/pp/19_pp.png"},
+		{"name":"dogBody","type":"image","url":"assets/dogBody.png"},
+		{"name":"dogHandL","type":"image","url":"assets/dogHandL.png"},
+		{"name":"dogHandR","type":"image","url":"assets/dogHandR.png"},
+
+		{"name":"20_p1","type":"image","url":"assets/20_p1.jpg"},
+		{"name":"20_p2","type":"image","url":"assets/20_p2.jpg"},
+		{"name":"20_p3","type":"image","url":"assets/20_p3.jpg"},
+		{"name":"20_p4","type":"image","url":"assets/20_p4.jpg"},
+		{"name":"20_t1","type":"image","url":"assets/20_t1.png"},
+		{"name":"20_t2","type":"image","url":"assets/20_t2.png"},
+		{"name":"20_t3a","type":"image","url":"assets/20_t3a.png"},
+		{"name":"20_t3b","type":"image","url":"assets/20_t3b.png"},
+		{"name":"20_t7","type":"image","url":"assets/20_t7.png"},
+		{"name":"20_tDot","type":"image","url":"assets/20_tDot.png"},
+
+	  	{"name":"shareTip","type":"image","url":"assets/shareTip.png"},
+	  	{"name":"shareTipBg","type":"image","url":"assets/shareTipBg.png"},
+	  	{"name":"bg","type":"image","url":"assets/bg.png"},
+
+	  	{"name":"soundOff","type":"image","url":"assets/soundOff.png"},
+	  	{"name":"soundOn","type":"image","url":"assets/soundOn.png"},
+	  	{"name":"bgm","type":"sound","url":"sounds/bgm.mp3"},
+	  	{"name":"pageMove","type":"sound","url":"sounds/pageMove.mp3"},
+
+	  	{"name":"loadingClip","type":"image","url":"assets/loadingClip.png"}
+
+	],
+
+"groups":
+	[
+	    {"name":"loading","keys":"loadingClip"},
+        {"name":"contents","keys":"dogBody,dogHandL,dogHandR,pageMove,soundOff,soundOn,bgm,bg,shareTip,shareTipBg,20_p1,20_p2,20_p3,20_p4,20_t1,20_t2,20_t3a,20_t3b,20_t7,20_tDot,19_p2,19_t1,19_pp,18_p1,18_t1,18_t2,17_p1,17_t1,17_t2,17_pp,16_p1,16_t1,16_t2,15_p1,15_t1,15_t2,14_p1,14_p2,14_t1,14_t2,14_pp,13_p1,13_t1,13_t2,12_p1,12_t1,12_t2,11_msk,11_p1,11_p2,11_p3,11_t1,11_t2,10_p1,10_t1,10_t2,10_pp,9_p1,9_p2,9_p3,9_p4,9_t1,9_t2,9_pp,8_p1,8_p2,8_t1,8_t2,7_p1,7_t1,7_t2,6_p1,6_p2,6_p3,6_p4,6_p5,6_t1,6_t2,6_pp,5_p1,5_t1,5_t2,5_pp,4_p1,4_t1,4_t2,3_p1,3_p2,3_p3,3_t1,3_t2,3_pp,2_pp,2_p1,2_t1,1_p1,1_p1b,1_p2,1_p3"}
+	]
+}

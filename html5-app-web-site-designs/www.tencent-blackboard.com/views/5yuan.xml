@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container name="5yuan" width="640" height="1008" clip="true">
+    <asset>images/5yuan/bg.jpg</asset>
+    <asset>images/5yuan/words.png</asset>
+    <asset>images/5yuan/sound/off.png</asset>
+    <asset>images/5yuan/sound/on.png</asset>
+    <asset>images/5yuan/motion/m_[0001-0040].jpg</asset>
+    <asset>sounds/5yuan.mp3</asset>
+    <asset>images/5yuan/down_arrow/m_[0001-0010].png</asset>
+
+    <container name="content" width="1008" height="1008">
+        <bitmap name="bg_fade" width="1008" height="1008" src="images/5yuan/bg.jpg"/>
+        <movie x="195" y="6" width="618" height="772">
+            <frame>images/5yuan/motion/m_[0001-0040].jpg</frame>
+        </movie>
+    </container>
+
+    <container name="words" width="640" height="1008" enabled="false">
+        <bitmap x="37" y="770" src="images/5yuan/words.png"/>
+    </container>
+
+    <container name="down_arrow" width="640" height="1008" enabled="false">
+        <movie x="304" y="977" width="34" height="27">
+            <frame>images/5yuan/down_arrow/m_[0001-0010].png</frame>
+            <frame reverse="reverse">images/5yuan/down_arrow/m_[0001-0010].png</frame>
+        </movie>
+    </container>
+
+    <container name="sound_box" width="640" height="1008" muted="true">
+        <container x="560" y="7" width="73" height="72">
+            <movie x="10" y="10" width="53" height="52" auto-play="false">
+                <frame>images/5yuan/sound/off.png</frame>
+                <frame>images/5yuan/sound/on.png</frame>
+            </movie>
+        </container>
+    </container>
+</container>

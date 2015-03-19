@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: LEXUS-HeiS-Light-U;
+    src: url('../assets/fonts/LEXUS_HSLU.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: Nobel;
+    src: url('../assets/fonts/Nobel-Light.ttf') format('truetype');
+}
